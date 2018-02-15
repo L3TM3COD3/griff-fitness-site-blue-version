@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Грифф зал - Цены и услуги</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/manifest.json">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">  
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main/main.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/modal.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="section ticket">
+			<header class="header header--price">
+				<div class="header__main--price">
+					<div class="header__container">
+						<div class="header__main__logo">
+							<a href="#" class="header__main__logo__link">
+								<img src="img/logo/s-logo-and-desc.svg" alt="Грифф-зал" class="header__main__logo-pic">
+							</a>
+						</div>
+						<nav class="header__main__menu">
+							<ul class="header__main__menu__list">
+								<li class="header__main__menu__list__item">
+									<a href="index.html" class="header__main__menu__list__item__link">О нас</a>
+								</li>
+								<li class="header__main__menu__list__item">
+									<a href="price.html" class="header__main__menu__list__item__link--active">Цены и услуги</a>
+								</li>
+								<li class="header__main__menu__list__item">
+									<a href="shedule.html" class="header__main__menu__list__item__link">Расписание</a>
+								</li>
+								<li class="header__main__menu__list__item">
+									<a href="trainings.html" class="header__main__menu__list__item__link">Направления</a>
+								</li>
+								<li class="header__main__menu__list__item">
+									<a href="sauna.html" class="header__main__menu__list__item__link">Баня и сауна</a>
+								</li>   
+							</ul>
+						</nav>
+						<address class="header__main__contacts">
+							<div class="header__main__contacts__phone">
+								<a href="tel:+73432010625" class="header__main__contacts__phone__link">+7 (343) 20-10-625</a>
+							</div>
+							<div class="header__main__contacts__shedule">
+								<div class="header__main__contacts__shedule__title">Адрес и время работы</div> 
+								<div class="header__main__contacts__shedule__dropdown">
+								<div class="header__main__contacts__shedule__dropdown__content">
+									<div class="header__main__contacts__shedule__dropdown__content__location">
+										<div class="header__main__contacts__shedule__dropdown__content__location__title">Адрес:</div>
+										<div class="header__main__contacts__shedule__dropdown__content__location__content">ул. Санаторная, 26</div>
+									</div>
+									<div class="header__main__contacts__shedule__dropdown__content__time">
+										<div class="header__main__contacts__shedule__dropdown__content__time__title">Время работы:</div>
+										<div class="header__main__contacts__shedule__dropdown__content__time__content">
+											<span>Пн, ср, пт: 8.00 - 22.00</span>
+											<span>Вт, чт: 11.00 - 22.00</span>
+											<span>Сб, вс: 11.00 - 18.00</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							</div>
+						</address>
+					</div>
+				</div>
+			</header>
+			<div class="ticket__container">
+				<div class="ticket__btns">
+					<ul class="ticket__btns__col ticket__btns__col--first">
+						<li class="ticket__offer">
+							<div class="ticket__offer__title">
+								<span class="ticket__offer__title__itself">Акция </span>
+								<span class="ticket__offer__title__name">"приведи друга"</span>
+							</div>
+							<div class="ticket__offer__content">
+								<div class="ticket__offer__content__desc">
+									Приведи друга и получи скидку <span class="desc-marker">500 рублей </span>на любой абонемент!
+								</div>
+								<div class="ticket__offer__content__add">
+									Правила акции читайте <a href="https://vk.com/griff_zal" class="add-link">здесь</a>
+								</div>
+							</div>
+						</li>
+						<li class="ticket__athlete__btn">
+							<div class="ticket__athlete__btn__overlay">
+								<div class="ticket__athlete__btn__overlay__title">
+									<span class="athlete-marker">Абонементы</span><br>
+									<span class="athlete-marker">в тренажерный зал</span>
+								</div>
+								<div class="ticket__athlete__btn__overlay__view">СМОТРЕТЬ</div>
+							</div>
+							<ul class="ticket__athlete__btn__content">
+								<li class="ticket__athlete__btn__content__col">
+									<div class="ticket__athlete__btn__content__col__item">
+										<div class="ticket__athlete__btn__content__col__item__title">разовое посещение</div>
+										<div class="ticket__athlete__btn__content__col__item__price">250 руб</div>
+										<a href="#" id="go" class="ticket__athlete__btn__content__col__item__link">
+											<div class="ticket__athlete__btn__content__col__item__buy">ПРИОБРЕСТИ</div>
+										</a>
+									</div>
+									<div class="ticket__athlete__btn__content__col__item">
+										<div class="ticket__athlete__btn__content__col__item__title">безлимитный абонемент на <br><span class="month-marker">1 месяц</span></div>
+										<div class="ticket__athlete__btn__content__col__item__price">2000 руб</div>
+										<a href="#" id="go" class="ticket__athlete__btn__content__col__item__link">
+											<div class="ticket__athlete__btn__content__col__item__buy">ПРИОБРЕСТИ</div>
+										</a>
+									</div>
+								</li>
+								<li class="ticket__athlete__btn__content__col">
+									<div class="ticket__athlete__btn__content__col__item">
+										<div class="ticket__athlete__btn__content__col__item__title">безлимитный абонемент на <br><span class="month-marker">3 месяца</span></div>
+										<div class="ticket__athlete__btn__content__col__item__price">4000 руб</div>
+										<a href="#" id="go" class="ticket__athlete__btn__content__col__item__link">
+											<div class="ticket__athlete__btn__content__col__item__buy">ПРИОБРЕСТИ</div>
+										</a>
+									</div>
+									<div class="ticket__athlete__btn__content__col__item">
+										<div class="ticket__athlete__btn__content__col__item__title">безлимитный абонемент на <br><span class="month-marker">6 месяцев </span></div>
+										<div class="ticket__athlete__btn__content__col__item__price">6000 руб</div>
+										<a href="#" id="go" class="ticket__athlete__btn__content__col__item__link">
+											<div class="ticket__athlete__btn__content__col__item__buy">ПРИОБРЕСТИ</div>
+										</a>
+									</div>
+								</li>
+								<li class="ticket__athlete__btn__content__col">
+									<div class="ticket__athlete__btn__content__col__item--spec">
+										<div class="ticket__athlete__btn__content__col__item--spec__title">безлимитный абонемент на <span class="month-marker">6 месяцев</span><br>аэробный + тренажерный залы</div>
+										<div class="ticket__athlete__btn__content__col__item--spec__price">7500 руб</div>
+										<a href="#" id="go" class="ticket__athlete__btn__content__col__item--spec__link">
+											<div class="ticket__athlete__btn__content__col__item--spec__buy">ПРИОБРЕСТИ</div>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="ticket__btns__col ticket__btns__col--second">
+						<li class="ticket__btns__col__row">
+							<ul class="ticket__btns__col__row__col-list">
+								<li class="ticket__btns__col__row__col-list__col">
+									<div class="ticket__btns__col__row__col-list__col__overlay">
+										<div class="ticket__btns__col__row__col-list__col__overlay__title">
+											<span class="athlete-marker">Персональный</span><br>
+											<span class="athlete-marker">тренинг</span>
+										</div>
+										<div class="ticket__btns__col__row__col-list__col__overlay__view">СМОТРЕТЬ</div>
+									</div>
+									<div class="ticket__btns__col__row__col-list__col__content">
+										<div class="ticket__btns__col__row__col-list__col__content__title"><span class="month-marker">ПЕРСОНАЛЬНЫЙ ТРЕНИНГ</span> (ПРИОБРЕТАЕТСЯ ОТДЕЛЬНО ОТ РАЗОВОГО ЗАНЯТИЯ ИЛИ АБОНЕМЕНТА В ТРЕНАЖЕРНЫЙ ЗАЛ)</div>
+										<div class="ticket__btns__col__row__col-list__col__content__price"><span class="month-marker">от 500 РУБ</span> — РАЗОВАЯ ПЕРСОНАЛЬНАЯ ТРЕНИРОВКА С СОСТАВЛЕНИЕМ ИНДИВИДУАЛЬНОЙ ПРОГРАММЫ.</div>
+										<a href="#" id="go" class="ticket__btns__col__row__col-list__col__content__link">
+											<div class="ticket__btns__col__row__col-list__col__content__buy">ПРИОБРЕСТИ</div>
+										</a>
+									</div>
+								</li>
+								<li class="ticket__btns__col__row__col-list__col--second">
+									<a href="trainings.html" class="ticket__btns__col__row__col-list__col--second-link">
+										НАПРАВЛЕНИЯ ГРУППОВЫХ ТРЕНИРОВОК
+									</a>
+								</li>
+								<li class="ticket__btns__col__row__col-list__col--three">
+									<a href="#" id="doc" class="ticket__btns__col__row__col-list__col--three-link">
+										Правила покупки и пользования абонементом
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="ticket__athlete__btn">
+							<a href="" class="ticket__athlete__btn-link">
+							<div class="ticket__athlete__btn__overlay">
+								<div class="ticket__athlete__btn__overlay__title">
+									<span class="athlete-marker">Абонементы</span><br>
+									<span class="athlete-marker">в аэробный зал</span>
+								</div>
+								<div class="ticket__athlete__btn__overlay__view">СМОТРЕТЬ</div>
+							</div>
+							<ul class="ticket__athlete__btn__content">
+								<li class="ticket__athlete__btn__content__col">
+									<div class="ticket__athlete__btn__content__col__item">
+										<div class="ticket__athlete__btn__content__col__item__title">разовое посещение</div>
+										<div class="ticket__athlete__btn__content__col__item__price">250 руб</div>
+										<a href="#" id="go" class="ticket__athlete__btn__content__col__item__link">
+											<div class="ticket__athlete__btn__content__col__item__buy">ПРИОБРЕСТИ</div>
+										</a>
+									</div>
+									<div class="ticket__athlete__btn__content__col__item">
+										<div class="ticket__athlete__btn__content__col__item__title">абонемент <br><span class="month-marker">8 занятий на 1 месяц</span></div>
+										<div class="ticket__athlete__btn__content__col__item__price">1700 руб</div>
+										<a href="#" id="go" class="ticket__athlete__btn__content__col__item__link">
+											<div class="ticket__athlete__btn__content__col__item__buy">ПРИОБРЕСТИ</div>
+										</a>
+									</div>
+								</li>
+								<li class="ticket__athlete__btn__content__col">
+									<div class="ticket__athlete__btn__content__col__item">
+										<div class="ticket__athlete__btn__content__col__item__title">абонемент<br><span class="month-marker">12 занятий на 1 месяц</span></div>
+										<div class="ticket__athlete__btn__content__col__item__price">2200 руб</div>
+										<a href="#" id="go" class="ticket__athlete__btn__content__col__item__link">
+											<div class="ticket__athlete__btn__content__col__item__buy">ПРИОБРЕСТИ</div>
+										</a>
+									</div>
+									<div class="ticket__athlete__btn__content__col__item">
+										<div class="ticket__athlete__btn__content__col__item__title">безлимитный абонемент на<br><span class="month-marker">1 месяц </span>аэробный + тренажерный залы</div>
+										<div class="ticket__athlete__btn__content__col__item__price">2500 руб</div>
+										<a href="#" id="go" class="ticket__athlete__btn__content__col__item__link">
+											<div class="ticket__athlete__btn__content__col__item__buy">ПРИОБРЕСТИ</div>
+										</a>
+									</div>
+								</li>
+								<li class="ticket__athlete__btn__content__col">
+									<div class="ticket__athlete__btn__content__col__item--spec">
+										<div class="ticket__athlete__btn__content__col__item--spec__title">безлимитный абонемент на <span class="month-marker">6 месяцев</span><br>аэробный + тренажерный залы</div>
+										<div class="ticket__athlete__btn__content__col__item--spec__price">7500 руб</div>
+										<a href="#" id="go" class="ticket__athlete__btn__content__col__item--spec__link">
+											<div class="ticket__athlete__btn__content__col__item--spec__buy">ПРИОБРЕСТИ</div>
+										</a>
+									</div>
+								</li>
+							</ul>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="section-footer">
+			<footer class="footer footer--sect">
+				<div class="footer__container">
+					<div class="footer__container__col footer__container__col--logo">
+						<img src="img/logo/logo.svg" alt="" class="footer__logo">
+						<div class="footer__copyright">© 2018 ФИТНЕС-КЛУБ "ГРИФФ"</div>
+					</div>
+					<div class="footer__container__col footer__container__col--sitemap">
+						<div class="footer__sitemap">
+							<ul class="footer__sitemap__list footer__sitemap__list--first">
+								<li class="footer__sitemap__list__item">
+									<a href="" style="color: #fea500;" class="footer__sitemap__list__item-link">Вакансии</a>
+								</li>
+								<li class="footer__sitemap__list__item">
+									<a href="index.html" class="footer__sitemap__list__item-link">Главная</a>
+								</li>
+								<li class="footer__sitemap__list__item">
+									<a href="index.html" class="footer__sitemap__list__item-link">Особенности</a>
+								</li>
+								<li class="footer__sitemap__list__item">
+									<a href="index.html" class="footer__sitemap__list__item-link">Оборудование зала</a>
+								</li>
+								<li class="footer__sitemap__list__item">
+									<a href="index.html" class="footer__sitemap__list__item-link">Фотогалерея</a>
+								</li>
+								<li class="footer__sitemap__list__item">
+									<a href="index.html" class="footer__sitemap__list__item-link">Контакты и карта</a>
+								</li>		
+								<li class="footer__sitemap__list__item">
+									<a href="price.html" class="footer__sitemap__list__item-link">Цены и услуги</a>
+								</li>
+								<li class="footer__sitemap__list__item">
+									<a href="price.html" class="footer__sitemap__list__item-link">Абонементы</a>
+								</li>
+								<li class="footer__sitemap__list__item">
+									<a href="shedule.html" class="footer__sitemap__list__item-link">Расписание</a>
+								</li>
+								<li class="footer__sitemap__list__item">
+									<a href="price.html" class="footer__sitemap__list__item-link">Акции и скидки</a>
+								</li>
+								<li class="footer__sitemap__list__item">
+									<a href="sauna.html" class="footer__sitemap__list__item-link">Баня и сауна</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__container__col footer__container__col--socials">
+						<div class="footer__socials">
+							<div class="footer__socials__title">Наши социальные сети:</div>
+							<ul class="footer__socials__list">
+								<li class="footer__socials__list__item">
+									<a href="https://vk.com/griff_zal" class="footer__socials__link">
+										<img src="img/icons/vk.svg" alt="" class="footer__socials__list__item__pic">
+									</a>
+								</li>
+								<li class="footer__socials__list__item">
+									<a href="" class="footer__socials__link">
+										<img src="img/icons/instagram.png" alt="" class="footer__socials__list__item__pic">
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__development"><a href="https://github.com/L3TM3COD3" class="footer__development__link">РАЗРАБОТКА САЙТА - НОСКОВ Н.В.</a></div>
+					</div>
+				</div>
+			</footer>
+		</section>
+	</div>
+	
+	<div class="modal" id="modal_form">
+		<span id="modal_close">X</span>
+		<form class="modal__form__lay" id="form-id-2" method='post' action="mail-2.php">
+		  <div class="modal__form">
+			<div class="modal__form__title">оставить заявку</div>
+			<div class="modal__form__name">
+			  <div class="modal__form__name__row">
+				<input class='modal__form__name__row__input' id="name-id-2" name='name-2' placeholder="Ваше имя" type="text">  
+			  </div>        
+			</div>
+			<div class="modal__form__tel">
+			  <div class="modal__form__tel__row">
+				<input type="tel" required autocomplete="on" id="tel-id-2" name='tel-2' placeholder="Ваш номер телефона" class="modal__form__tel__row__input">
+			  </div>
+			</div>
+			<input class='modal__form__submit' name="btn" type="submit">
+		  </div>
+		</form> 
+  </div>
+  <div id="overlay"></div>
+
+  <div class="modal" id="modal_form--doc">
+		<span id="modal_close--doc">X</span>
+		<div class="modal__content">
+			<div class="modal__content__title">
+				Абонемент в тренажерный зал и аэробный зал (групповые занятия).
+				Обязательна справка от терапевта о возможности посещать тренажерный зал.
+			</div>
+			<ol class="modal__content__list">
+				<li class="modal__content__list__item">
+					Абонемент приобретается с любого числа  и действует 30 календарный дней 
+					(Например: с 7 сентября по 7 октября).
+				</li>
+				<li class="modal__content__list__item">
+					Минимальное количество занятий – 8.
+				</li>
+				<li class="modal__content__list__item">
+					Абонементы на 8 или 12 занятий не являются персональными, 
+					т.е по вашему абонементу может посетить занятие друг, родственник и т.п). 
+					Абонемент на 1 и 3,6 и 12 месяцев безлимитный тренажерный зал или аэробный зал 
+					является персональным, т.е только на одного человека, наличие фото и печати обязательно.
+				</li>	
+				<li class="modal__content__list__item">
+					В стоимость абонемента входит бесплатная консультация тренера. 
+					Составление программы занятий и индивидуальная тренировка оплачиваются дополнительно.
+				</li>
+				<li class="modal__content__list__item">
+					Абонемент безлимитный на 1 месяц действителен 30 дней со дня первого занятия 
+					в тренажерном зале. Абонемент безлимитный на 3 месяца действителен 90 дней 
+					со дня первого занятия в тренажерном зале.Абонементы 6 и 12 месяцев действительны соответственно 
+					182 и 365 дней со дня первого посещения.
+				</li>
+				<li class="modal__content__list__item">
+					Пропущенные занятия по безлимитному абонементу не восстанавливаются, срок действия абонемента не переносится.
+				</li>
+				<li class="modal__content__list__item">
+					Если вы приобрели абонемент 8,12 занятий – в случае пропуска занятий по причине болезни 
+					( при наличии справки ) или длительной командировки ,пропущенные занятия восстанавливаются 
+					только при покупке абонемента на следующий месяц путем добавления к абонементу 
+					(Например: абонемент 8 занятий + пропущенные занятия)
+				</li>
+				<li class="modal__content__list__item">
+					Занятия в зале необходимо посещать в чистой сменной обуви, стараться чтобы открытые части тела 
+					не соприкасались с обивкой тренажеров (использовать индивидуальные полотенца). 
+					После окончания упражнения убирать за собой веса и гантели.
+				</li>
+				<li class="modal__content__list__item">
+					Обязательно заполнение анкеты, ознакомление с Правилами техники безопасности 
+					в тренажёрном зале и Справка от терапевта о возможности заниматься в тренажёрном зале и отсутствии противопоказаний 
+				</li>
+				<li class="modal__content__list__item">
+					При покупке любого абонемента, ребенок до 10 лет может с вами находиться 
+					бесплатно в зале групповых занятий, только в сопровождении родителей 
+					( см. Правила посещения фитнес-клуба «Гриф» до 17 лет )
+				</li>
+				<li class="modal__content__list__item">
+					С 11 лет можно воспользоваться скидкой 5 % на посещения 
+					фитнес-клуба для школьников и студентов ( см. Правила посещения фитнес-клуба «Гриф» до 17 лет )
+				</li>
+				<li class="modal__content__list__item">
+					Абонементы купленные по акции являются персональными, 
+					пропущенные занятия не восстанавливаются, срок действия абонента не переносится.
+				</li>
+			</ol>
+		</div>
+  </div>
+  <div id="overlay--doc"></div>
+
+</body>
+<script src="js/ajax-2.js"></script>
+</html>

@@ -1,0 +1,36 @@
+// responsive
+@function rem($px) {
+	@return $px / 16px+0rem;
+}
+
+// adaptive 
+@mixin normal {
+	@media screen and (max-width: $normal) {
+		@content;
+	}
+}
+
+@mixin laptop {
+	@media screen and (max-width: $laptop) {
+		@content;
+	}
+}
+
+@mixin tablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media screen and (max-width: $phone) {
+    @content;
+  }
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }  
+}

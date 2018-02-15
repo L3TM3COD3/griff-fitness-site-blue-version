@@ -1,0 +1,25 @@
+// config
+@import "config/_media";
+@import "config/_mixins";
+@import "config/_variables";
+
+// layout
+@import "layout/_fonts";
+@import "layout/_base";
+@import "layout/_adjustment";
+
+// section 
+@import "sections/_header";
+@import "sections/_hero";
+@import "sections/_footer";
+@import "sections/_slider";
+@import "sections/_advantages";
+@import "sections/_equip";
+@import "sections/_paginator";
+@import "sections/_gallery";
+@import "sections/_map";
+@import "sections/_price";
+@import "sections/_modal";
+@import "sections/_trainings";
+@import "sections/_shedule";
+@import "sections/_sauna";

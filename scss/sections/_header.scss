@@ -1,0 +1,228 @@
+.header {
+    height: 15%;
+    width: 100%;
+
+    &--price {
+        height: 10%;
+        width: 100%;
+        border-bottom: rem(1px) solid $low-orange;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+    }
+
+    &__main {
+        border: rem(1px) solid black;
+        height: 70%;
+        background: $black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include normal {
+            height: 65%;   
+        }
+
+        &--price {
+            border: rem(1px) solid black;
+            height: 100%;
+            background: $black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__logo {
+            width: 10%;
+        }
+
+        &__menu {
+            width: 50%;
+            
+            &__list {
+                text-transform: uppercase;
+                font-size: rem(24px);
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                &__item {
+                    transition: .3s;
+
+                    &:hover {
+                        transform: translateY(10%);
+                    }
+                }
+
+                &__item__link {
+                    color: white;
+                    transition: .3s;
+                    border-radius: rem(0px);
+                    padding: rem(2px);
+                    transition: .3s;
+                    padding-left: rem(6px);
+                    padding-right: rem(6px);
+                    
+                    &:hover {
+                        color: $black;
+                        background-color: white;
+                    }
+
+                    &--active {
+                        color: $black;
+                        background: white;
+                        padding-left: rem(6px);
+                        padding-right: rem(6px);
+                    }
+                }
+            }
+        }
+
+        &__contacts {
+            min-width: 10%;
+            font-family: pobedabold;
+            font-size: rem(18px);
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            letter-spacing: rem(2px);
+
+            &__phone__link {
+                float: right;
+                transition: .3s;
+
+                &:hover {
+                    color: $low-orange;
+                }
+            }
+
+            &__shedule {
+                position: relative;
+
+                &:hover .header__main__contacts__shedule__dropdown {
+                    top: 105%;
+                    opacity: 1;
+                }
+
+                &__title {
+                    font-style: normal;
+                    color: $low-orange;
+                    transition: .3s;
+                    cursor: pointer;
+    
+                    &:hover {
+                        color: white;
+                    }
+                }
+
+                &__dropdown {
+                    z-index: 15;
+                    padding: 10%;
+                    font-family: cervo;
+                    font-size: rem(16px);
+                    border: rem(1px) solid black;
+                    position: absolute;
+                    top: -1100%;
+                    right: 0%;
+                    background: white;
+                    color: black;
+                    width: 115%;
+                    height: 750%;
+                    opacity: 0;
+                    font-style: normal;
+                    transition: opacity .5s;
+                    border-radius: rem(2px);
+                    -webkit-box-shadow: rem(0px) rem(0px) rem(20px) rem(1px) rgba(0,0,0,0.7);
+                    -moz-box-shadow: rem(0px) rem(0px) rem(20px) rem(1px) rgba(0,0,0,0.7);
+                    box-shadow: rem(0px) rem(0px) rem(20px) rem(1px) rgba(0,0,0,0.7);
+
+                    &__content {
+                        min-height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        &__location__title {
+                            font-weight: bold;
+                            text-transform: uppercase;
+                        }
+
+                        &__time__title {
+                            font-weight: bold;
+                            text-transform: uppercase;
+                        }
+
+                        &__time__content {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    &__sub {
+        height: 30%;
+        display: flex;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(270deg, $high-orange, $low-orange 60%);
+
+        @include normal {
+            height: 35%;   
+        }
+        
+        &__list {
+            text-transform: uppercase;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-width: 40%;
+            height: 100%;
+            font-family: pobedabold;
+
+            &::before {
+                content: '';
+                background-image: url('../../img/icons/triangle.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                width: rem(20px);
+                height: rem(20px);
+            }
+
+            &__item {
+                font-size: rem(18px);
+                letter-spacing: rem(2px);
+                transition: .3s;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-bottom: rem(1px) solid transparent;
+
+                
+            }
+
+            &__item:hover {
+                border-bottom: rem(1px) solid white;
+                
+                @include normal {
+                    border-bottom: none;
+                    text-decoration: underline;   
+                }
+            }
+        }
+    }
+}

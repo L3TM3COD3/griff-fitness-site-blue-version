@@ -1,0 +1,68 @@
+.shedule {
+  background: white;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 90%;
+    }
+
+    &__content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+table.blueTable {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+  }
+  table.blueTable td, table.blueTable th {
+    padding: rem(3px) rem(2px);
+  }
+  table.blueTable tbody td {
+    font-size: rem(24px);
+    text-align: center;
+    text-transform: uppercase;
+    border: rem(1px) solid $black;
+  }
+  table.blueTable thead {
+    background: $low-orange;
+  }
+  table.blueTable thead th {
+    border-right: rem(1px) solid $low-orange;
+    background: $black;
+    padding: 1%;
+    font-size: rem(24px);
+    text-align: center;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+  table.blueTable thead th:first-child {
+    border-left: none;
+  }
+  
+  table.blueTable tfoot {
+    font-size: rem(14px);
+    font-weight: bold;
+    color: white;
+    background: $black;
+  }
+  table.blueTable tfoot td {
+    font-size: rem(24px);
+    padding: 1%;
+    font-weight: normal;
+    font-style: italic;
+  }
+
+.table__time {
+    background: $low-orange;
+}

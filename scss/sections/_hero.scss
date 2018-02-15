@@ -1,0 +1,163 @@
+.hero {
+    background-image: url('../../img/bg/hero-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: rem(0px) rem(9px) rem(60px) rem(-1px) rgba(0,0,0,0.75);
+    -moz-box-shadow: rem(0px) rem(9px) rem(60px) rem(-1px) rgba(0,0,0,0.75);
+    box-shadow: rem(0px) rem(9px) rem(60px) rem(-1px) rgba(0,0,0,0.75);
+    z-index: 2;
+
+    &__container {
+        width: 100%;
+        height: 85%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__content {
+        height: 100%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &__txt {
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            &__title {
+                text-transform: uppercase;
+                color: $black;
+                font-size: rem(82px);
+                height: 50%;
+
+                @include normal {
+                 font-size: 64px;      
+                }
+
+                .marker {
+                    background: white;
+                    padding-left: 2%;
+                    padding-right: 2%;
+                }
+            }
+
+            &__adv {
+                height: 40%;
+                width: 72%;
+                display: flex;
+
+
+                &__list {
+                    font-size: rem(28px);
+                    font-family: pobedabold;
+                    letter-spacing: rem(2px);
+                    color: white;
+                    height: 100%;
+                    width: 58%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    text-transform: uppercase;
+                    border: rem(5px) solid white;
+                    padding: 2%;
+
+                    @include normal {
+                       font-size: 21px;
+                    }
+                }
+            }
+
+            &__usefull-links__list {
+                min-width: 33%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                background: white;
+                padding: 2%;
+
+                &__link {
+                    color: $black;
+                    font-family: cervo;
+                    opacity: .9;
+                    text-transform: uppercase;
+                    font-size: rem(22px);
+                    transition: .3s;
+
+                    &:hover {
+                        transform: translateX(rem(5px));
+                        text-decoration: none;
+                        color: $high-orange;
+                    }
+                }
+            }
+        }
+
+        &__buttons {
+            height: 15%;
+            width: 100%;
+
+            &__list {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                display: flex;
+
+                &__link {
+                    width: 30%;
+                    height: 100%;
+                    background: white;
+                    color: $black;
+                    margin-right: 1%;
+                    margin-top: 1%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: rem(28px);
+                    text-transform: uppercase;
+                    transition: .3s;
+                    -webkit-box-shadow: rem(0px) rem(10px) rem(42px) rem(3px) rgba(0,0,0,0.77);
+                    -moz-box-shadow: rem(0px) rem(10px) rem(42px) rem(3px) rgba(0,0,0,0.77);
+                    box-shadow: rem(0px) rem(10px) rem(42px) rem(3px) rgba(0,0,0,0.77);
+
+                    &:hover {
+                        transform: translateY(rem(10px));
+                        -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                        -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                        box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                        color: white;
+                    }
+
+                    &--one {
+                        width: 20%;
+
+                        &:hover {
+                            background-image: linear-gradient(190deg, $high-blue, $low-blue);
+                           color: white;
+                        }
+                    }
+
+                    &--two {
+                        width: 20%;
+
+                        &:hover {
+                            background-image: linear-gradient(190deg, $high-blue, $low-blue);
+                            color: white;
+                        }
+                    }
+
+                    &--three {
+
+                        &:hover {
+                            background-image: linear-gradient(190deg, $high-orange, $low-orange);
+                            color: white;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

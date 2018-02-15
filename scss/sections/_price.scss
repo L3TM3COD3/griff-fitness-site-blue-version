@@ -1,0 +1,650 @@
+.ticket {
+    background-image: url('../../img/bg/price-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+    
+    &__container {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .ticket__btns {
+            width: 90%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+
+            @include normal {
+                height: 92%;
+                width: 97%;   
+            }
+
+            &__col {
+                color: white;
+                height: 100%;
+                width: 48%;
+
+                &--first {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+
+                    .ticket__offer {
+                        width: 100%;
+                        height: 35%;
+                        border: rem(15px) solid white;
+                        text-transform: uppercase;
+                        display: flex;
+                        padding-left: 6%;
+                        justify-content: center;
+                        flex-direction: column;
+
+                        @include normal {
+                            border: solid white 7px;
+                            padding-left: 3%;
+                        }
+
+                        &__title {
+                            font-size: rem(54px);
+
+                            &__name {
+                                font-style: italic;
+                                color: $low-orange;
+                            }
+                        }
+
+                        &__content {
+                            font-size: rem(26px); 
+
+                            &__add {
+                                font-size: rem(22px);
+                            }
+
+                            .desc-marker {
+                                color: $low-orange;
+                            }
+
+                            .add-link {
+                                color: $low-orange;
+                                text-decoration: underline;
+                                
+                                &:hover {
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+
+                    .ticket__athlete__btn {
+                        width: 100%;
+                        height: 60%;
+                        position: relative;
+                        overflow: hidden;
+                        -webkit-box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
+                        -moz-box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
+                        box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
+                        transition: .3s;
+
+                        &:hover {
+                            transform: translateX(rem(-20px));
+                            -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                        }
+
+                        &:hover .ticket__athlete__btn__overlay {
+                            left: -100%
+                        }
+
+                        &__overlay {
+                            background: url('../../img/content/price-btn-bg.jpg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            position: absolute;
+                            left: 0%;
+                            transition: 1s;
+                            width: 100%;
+                            height: 100%;
+                            padding: 5%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            color: $black;
+                            z-index: 6;
+
+                            &__title {
+                                text-transform: uppercase;
+                                color: white;
+                                font-size: rem(64px);
+                                height: 50%;
+
+                                @include normal {
+                                    font-size: 48px;   
+                                }
+
+                                .athlete-marker {
+                                    background: $black;
+                                    padding-left: 2%;
+                                    padding-right: 2%;
+                                }
+                            }
+
+                            &__view {
+                                text-transform: uppercase;
+                                font-size: rem(36px);
+                                text-decoration: underline;
+
+                                @include normal {
+                                    font-size: 32px;   
+                                }
+                            }
+                        }
+
+                        &__content {
+                            border: rem(2px) solid white;
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+
+                            &__col {
+                                height: 100%;
+                                width: 34%;
+                                display: flex;
+                                flex-direction: column;
+
+                                &__item {
+                                    padding: 6%;
+                                    background: $black;
+                                    height: 50%;
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-around;
+                                    align-items: center;
+                                    text-align: center;
+                                    transition: .3s;
+                                    border: rem(2px) solid transparent;
+                                    
+                                    &--spec {
+                                        padding: 6%;
+                                        background: $low-orange;
+                                        height: 100%;
+                                        width: 100%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: space-around;
+                                        align-items: center;
+                                        text-align: center;
+                                        transition: .3s;
+                                        border: rem(2px) solid transparent;
+
+                                        &__title {
+                                            font-size: rem(24px);
+                                            color: $black;
+                                            text-transform: uppercase;
+
+                                            .month-marker {
+                                                color: white;
+                                            }
+                                        }
+    
+                                        &__price {
+                                            font-size: rem(36px);
+                                            color: $black;
+                                            text-transform: uppercase;
+                                        }
+    
+                                        &__link {
+                                            font-size: rem(24px);
+                                            background: $black;
+                                            color: white;
+                                            width: 55%;
+                                            height: 10%;
+                                            text-transform: uppercase;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            transition: .3s;
+    
+                                            &:hover {
+                                                background: white;
+                                                color: $black;
+                                            }
+                                        }
+
+                                        &:hover {
+                                            -webkit-box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
+                                            -moz-box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
+                                            box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
+                                            z-index: 5;
+                                            border: rem(2px) solid white;
+                                        }
+                                    }
+
+                                    &:hover {
+                                        -webkit-box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
+                                        -moz-box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
+                                        box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
+                                        z-index: 5;
+                                        border: rem(2px) solid $low-orange;
+                                    }
+
+                                    &__title {
+                                        font-size: rem(20px);
+                                        color: white;
+                                        text-transform: uppercase;
+
+                                        .month-marker {
+                                            color: $low-orange;
+                                        }
+                                    }
+
+                                    &__price {
+                                        font-size: rem(25px);
+                                        color: $low-orange;
+                                        text-transform: uppercase;
+                                    }
+
+                                    &__link {
+                                        font-size: rem(18px);
+                                        background: white;
+                                        width: 40%;
+                                        height: 17%;
+                                        color: $black;
+                                        text-transform: uppercase;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        transition: .3s;
+
+                                        &:hover {
+                                            background: $low-orange;
+                                            color: $black;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &--second {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+
+                    .ticket__offer {
+                        width: 100%;
+                        height: 35%;
+                        border: rem(15px) solid white;
+                    }
+
+                    .ticket__athlete__btn {
+                        width: 100%;
+                        height: 60%;
+                        position: relative;
+                        overflow: hidden;
+                        -webkit-box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
+                        -moz-box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
+                        box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
+                        transition: .3s;
+
+                        &:hover {
+                            transform: translateX(rem(20px));
+                            -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                        }
+
+                        &:hover .ticket__athlete__btn__overlay {
+                            right: -100%
+                        }
+
+                        &__overlay {
+                            background: url('../../img/content/price-btn-bg-2.jpg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            position: absolute;
+                            right: 0%;
+                            transition: 1s;
+                            width: 100%;
+                            height: 100%;
+                            padding: 5%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            color: $black;
+                            z-index: 6;
+                            text-align: right;
+
+                            &__title {
+                                text-transform: uppercase;
+                                color: white;
+                                font-size: rem(64px);
+                                height: 50%;
+
+                                .athlete-marker {
+                                    background: $black;
+                                    padding-left: 2%;
+                                    padding-right: 2%;
+                                }
+                            }
+
+                            &__view {
+                                text-transform: uppercase;
+                                font-size: rem(36px);
+                                text-decoration: underline;
+                            }
+                        }
+
+                        &__content {
+                            border: rem(2px) solid white;
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: row-reverse;
+
+                            &__col {
+                                height: 100%;
+                                width: 34%;
+                                display: flex;
+                                flex-direction: column;
+
+                                &__item {
+                                    padding: 6%;
+                                    background: white;
+                                    height: 50%;
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-around;
+                                    align-items: center;
+                                    text-align: center;
+                                    transition: .3s;
+                                    border: rem(2px) solid transparent;
+                                    
+                                    &--spec {
+                                        padding: 6%;
+                                        background: $low-blue;
+                                        height: 100%;
+                                        width: 100%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: space-around;
+                                        align-items: center;
+                                        text-align: center;
+                                        transition: .3s;
+                                        border: rem(2px) solid transparent;
+
+                                        &__title {
+                                            font-size: rem(24px);
+                                            color: white;
+                                            text-transform: uppercase;
+
+                                            .month-marker {
+                                                color: $black;
+                                            }
+                                        }
+    
+                                        &__price {
+                                            font-size: rem(36px);
+                                            color: white;
+                                            text-transform: uppercase;
+                                        }
+    
+                                        &__link {
+                                            font-size: rem(24px);
+                                            background: white;
+                                            color: $black;
+                                            width: 55%;
+                                            height: 10%;
+                                            text-transform: uppercase;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            transition: .3s;
+    
+                                            &:hover {
+                                                background: $black;
+                                                color: white;
+                                            }
+                                        }
+
+                                        &:hover {
+                                            -webkit-box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
+                                            -moz-box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
+                                            box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
+                                            z-index: 5;
+                                            border: rem(2px) solid $black;
+                                        }
+                                    }
+
+                                    &:hover {
+                                        -webkit-box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
+                                        -moz-box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
+                                        box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
+                                        z-index: 5;
+                                        border: rem(2px) solid $low-blue;
+                                    }
+
+                                    &__title {
+                                        font-size: rem(20px);
+                                        color: $black;
+                                        text-transform: uppercase;
+
+                                        .month-marker {
+                                            color: $low-blue;
+                                        }
+                                    }
+
+                                    &__price {
+                                        font-size: rem(25px);
+                                        color: $low-blue;
+                                        text-transform: uppercase;
+                                    }
+
+                                    &__link {
+                                        font-size: rem(18px);
+                                        background: $black;
+                                        width: 40%;
+                                        height: 17%;
+                                        color: white;
+                                        text-transform: uppercase;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        transition: .3s;
+
+                                        &:hover {
+                                            background: $low-blue;
+                                            color: white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &__row {
+                    height: 35%;
+
+                    &__col-list {
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+
+                        &__col {
+                            width: 50%;
+                            height: 100%;
+                            position: relative;
+                            -webkit-box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
+                            -moz-box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
+                            box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
+                            transition: .3s;
+                            overflow: hidden;
+                            background: $black;
+    
+                            &:hover {
+                                transform: translateY(rem(15px));
+                                -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                                -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                                box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            }
+    
+                            &:hover .ticket__btns__col__row__col-list__col__overlay {
+                                bottom: -100%
+                            }
+
+                            &__overlay {
+                                background: url('../../img/content/price-btn-bg-3.jpg');
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                position: absolute;
+                                bottom: 0%;
+                                transition: 1s;
+                                width: 100%;
+                                height: 100%;
+                                padding: 5%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                color: $black;
+                                z-index: 6;
+                                text-align: left;
+    
+                                &__title {
+                                    text-transform: uppercase;
+                                    color: white;
+                                    font-size: rem(32px);
+                                    height: 50%;
+    
+                                    .athlete-marker {
+                                        background: $black;
+                                        padding-left: 2%;
+                                        padding-right: 2%;
+                                    }
+                                }
+    
+                                &__view {
+                                    text-transform: uppercase;
+                                    font-size: rem(26px);
+                                    text-decoration: underline;
+                                }
+                            }
+
+                            &__content {
+                                width: 100%;
+                                height: 100%;
+                                border: rem(1px) solid white;
+                                padding: 5%;
+                                display: flex;
+                                justify-content: space-around;
+                                flex-direction: column; 
+                                font-size: rem(18px);
+
+                                &__title {
+                                    font-size: rem(18px);
+                                    color: white;
+                                    text-transform: uppercase;
+
+                                    .month-marker {
+                                        color: $low-orange;
+                                    }
+                                }
+
+                                &__price {
+                                    font-size: rem(18px);
+                                    color: white;
+                                    text-transform: uppercase;
+                                    
+                                    .month-marker {
+                                        color: $low-orange;
+                                    }
+                                }
+
+                                &__link {
+                                    font-size: rem(18px);
+                                    background: white;
+                                    color: $black;
+                                    width: 25%;
+                                    height: 15%;
+                                    text-transform: uppercase;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    transition: .3s;
+
+                                    &:hover {
+                                        background: $low-orange;
+                                        color: $black;
+                                    }
+                                }
+                            }
+
+                            &--second {
+                                padding: 5%;
+                                font-size: rem(24px);
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 25%;
+                                height: 100%;
+                                transition: .3s;
+                                text-transform: uppercase;
+                                background: white;
+                                z-index: 2;
+
+                                &-link {
+                                    color: $black;
+                                }
+        
+                                &:hover {
+                                    border: rem(2px) solid $low-orange;
+                                    transform: translateX(rem(15px));
+                                    -webkit-box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
+                                    -moz-box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
+                                    box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
+                                    z-index: 3;
+                                }
+                            }
+
+                            &--three {
+                                padding: 5%;
+                                font-size: rem(24px);
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 25%;
+                                height: 100%;
+                                transition: .3s;
+                                text-transform: uppercase;
+                                background: white;
+                                z-index: 2;
+
+                                &-link {
+                                    color: $black;
+                                }
+
+                                &:hover {
+                                    border: rem(2px) solid $low-blue;
+                                    transform: translateX(rem(-15px));
+                                    -webkit-box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
+                                    -moz-box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
+                                    box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
+                                    z-index: 3;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

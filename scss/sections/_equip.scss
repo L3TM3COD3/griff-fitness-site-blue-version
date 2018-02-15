@@ -1,0 +1,124 @@
+.slider__slides__equip {
+    background: white;
+
+    &__title {
+        color: $low-blue;
+        font-size: rem(80px);
+        position: absolute;
+        top: 0%;
+        left: 5%;
+        text-transform: uppercase;
+        opacity: .4;
+        letter-spacing: rem(70px);
+
+        @include normal {
+            font-size: 64px;
+            top: 1%;
+            left: 3%;
+            letter-spacing: 60px;               
+        }
+    }
+
+    &__list {
+        height: 80%;
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 7%;
+        margin-right: 8%;
+        
+        @include normal {
+           height: 70%; 
+        }
+
+        &__item {
+            height: 20%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            &__icon-block {
+                height: 80%;
+                width: 15%;
+                
+                @include normal {
+                    height: 75%;
+                    width: 13%;    
+                }
+
+                &--1 {
+                    background: url('../../img/icons/gym.svg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+
+                &--2 {
+                    background: url('../../img/icons/aerobic.svg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+
+                &--3 {
+                    background: url('../../img/icons/star.svg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+            }
+
+            &__txt {
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+
+                &__title {
+                    text-transform: uppercase;
+                    text-decoration: underline;
+                    font-family: pobedabold;
+                    font-size: rem(28px);
+                    height: 20%;
+
+                    @include normal {
+                        font-size: 21px;
+                        margin-bottom: 2%;
+                    }
+                }
+
+                &__desc {
+                    height: 72%;
+                    font-family: cervo;
+                    font-size: rem(20px);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    line-height: 1.3;
+
+                    @include normal {
+                        font-size: 18px;    
+                    }
+
+                    &__more {
+                        transition: .3s;
+
+                        &:hover {
+                            transform: translateX(rem(10px));
+                        }
+
+                        &__link {
+                            color: $black;
+                            transition: .3s;
+
+                            &:hover {
+                                color: $low-blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

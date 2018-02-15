@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Баня и сауна</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/manifest.json">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">  
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main/main.css">
+	<link rel="stylesheet" href="css/lightgallery.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/modal-sauna.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="section sauna">
+            <header class="header header--price">
+				<div class="header__main--price">
+					<div class="header__container">
+						<div class="header__main__logo">
+							<a href="#" class="header__main__logo__link">
+								<img src="img/logo/s-logo-and-desc.svg" alt="Грифф-зал" class="header__main__logo-pic">
+							</a>
+						</div>
+						<nav class="header__main__menu">
+							<ul class="header__main__menu__list">
+								<li class="header__main__menu__list__item">
+									<a href="index.html" class="header__main__menu__list__item__link">О нас</a>
+								</li>
+								<li class="header__main__menu__list__item">
+									<a href="price.html" class="header__main__menu__list__item__link">Цены и услуги</a>
+								</li>
+								<li class="header__main__menu__list__item">
+									<a href="shedule.html" class="header__main__menu__list__item__link">Расписание</a>
+								</li>
+								<li class="header__main__menu__list__item">
+									<a href="trainings.html" class="header__main__menu__list__item__link">Направления</a>
+								</li>
+								<li class="header__main__menu__list__item">
+									<a href="sauna.html" class="header__main__menu__list__item__link--active">Баня и сауна</a>
+								</li>   
+							</ul>
+						</nav>
+						<address class="header__main__contacts">
+							<div class="header__main__contacts__phone">
+								<a href="tel:+73432010625" class="header__main__contacts__phone__link">+7 (343) 20-10-625</a>
+							</div>
+							<div class="header__main__contacts__shedule">
+								<div class="header__main__contacts__shedule__title">Адрес и время работы</div> 
+								<div class="header__main__contacts__shedule__dropdown">
+								<div class="header__main__contacts__shedule__dropdown__content">
+									<div class="header__main__contacts__shedule__dropdown__content__location">
+										<div class="header__main__contacts__shedule__dropdown__content__location__title">Адрес:</div>
+										<div class="header__main__contacts__shedule__dropdown__content__location__content">ул. Санаторная, 26</div>
+									</div>
+									<div class="header__main__contacts__shedule__dropdown__content__time">
+										<div class="header__main__contacts__shedule__dropdown__content__time__title">Время работы:</div>
+										<div class="header__main__contacts__shedule__dropdown__content__time__content">
+											<span>Пн, ср, пт: 8.00 - 22.00</span>
+											<span>Вт, чт: 11.00 - 22.00</span>
+											<span>Сб, вс: 11.00 - 18.00</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							</div>
+						</address>
+					</div>
+				</div>
+            </header>
+            <div class="sauna__container">
+                <div class="sauna__content">
+					<div class="sauna__content__col sauna__content__col--1">
+						<div class="sauna__content__txt">
+							<div class="sauna__content__txt__title">
+								<span class="athlete-marker">Lorem ipsum dolor sit amet.</span>
+							</div>
+							<div class="sauna__content__txt__desc">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+								Dolorem numquam eius quaerat expedita laborum accusantium 
+								fugit voluptatum similique aspernatur veniam.
+							</div>
+						</div>
+						<div class="sauna__content__sauna">
+							<div class="sauna__txt">
+								<div class="sauna__txt__row">
+									<div class="sauna__txt__title">САУНА</div>
+									<div class="sauna__txt__desc">ОБОРУДОВАНИЕ: финская парная, караоке, телевидение, мини-бассейн, душевая, комната отдыха.</div>
+									<div class="sauna__txt__price">CТОИМОСТЬ 600 Р/ЧАС ( 5 ЧЕЛОВЕК )</div>
+								</div>
+								<div class="sauna__txt__contacts">ЗАПИСЬ ПО ТЕЛЕФОНУ:<br>297-26-00 (бАНЯ),<br>20-10-625<br>(ЧЕРЕЗ АДМИНИСТРАТОРА ФИТНЕС-КЛУБА)</div>
+							</div>
+							<div id="sauna-page" class="sauna__gallery">
+								<div class="sauna__gallery__overlay">
+									<div class="sauna__gallery__overlay__title">ФОТОГАЛЕРЕЯ</div>
+								</div>
+								<div data-src="img/photos/sauna-1.jpg" class="photo-container">
+									<img src="img/photos/sauna-1.jpg" alt="" class="sauna__gallery__photo">
+								</div>
+								<div data-src="img/photos/sauna-2.jpg" class="photo-container">
+									<img src="img/photos/sauna-2.jpg" alt="" class="sauna__gallery__photo">
+								</div>
+								<div data-src="img/photos/sauna-3.jpg" class="photo-container">
+									<img src="img/photos/sauna-3.jpg" alt="" class="sauna__gallery__photo">
+								</div>
+								<div data-src="img/photos/sauna-5.jpg" class="photo-container">
+									<img src="img/photos/sauna-5.jpg" alt="" class="sauna__gallery__photo">
+								</div>
+								<div data-src="img/photos/sauna-6.jpg" class="photo-container">
+									<img src="img/photos/sauna-6.jpg" alt="" class="sauna__gallery__photo">
+								</div>
+								<div data-src="img/photos/sauna-7.jpg" class="photo-container">
+									<img src="img/photos/sauna-7.jpg" alt="" class="sauna__gallery__photo">
+								</div>
+								<div data-src="img/photos/sauna-8.jpg" class="photo-container">
+									<img src="img/photos/sauna-8.jpg" alt="" class="sauna__gallery__photo">
+								</div>
+								<div data-src="img/photos/sauna-9.jpg" class="photo-container">
+									<img src="img/photos/sauna-9.jpg" alt="" class="sauna__gallery__photo">
+								</div>
+								<div data-src="img/photos/sauna-10.jpg" class="photo-container">
+									<img src="img/photos/sauna-10.jpg" alt="" class="sauna__gallery__photo">
+								</div>
+								<div data-src="img/photos/sauna-11.jpg" class="photo-container">
+									<img src="img/photos/sauna-11.jpg" alt="" class="sauna__gallery__photo">
+								</div>
+								<div data-src="img/photos/sauna-12.jpg" class="photo-container">
+									<img src="img/photos/sauna-12.jpg" alt="" class="sauna__gallery__photo">
+								</div>
+								<div data-src="img/photos/sauna-13.jpg" class="photo-container">
+									<img src="img/photos/sauna-13.jpg" alt="" class="sauna__gallery__photo">
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="sauna__content__col sauna__content__col--2">
+						<div class="sauna__content__banya">
+							<div class="banya__txt">
+								<div class="banya__txt__title">
+									<div class="banya__txt__title__name">БАНЯ</div>
+									<div class="banya__txt__title__location">ул. САНАТОРНАЯ 26, общее отделение</div>
+								</div>
+								<div class="banya__txt__sex">
+									<div class="banya__txt__sex__man">
+										<div class="banya__txt__sex__man__title">мужские дни: пн, ср, пт, вс.</div>
+									</div>
+									<div class="banya__txt__sex__woman">
+										<div class="banya__txt__sex__woman__title">женские дни: вт, чт, сб.</div>
+									</div>
+								</div>
+								<div class="banya__txt__shedule">
+									<div class="banya__txt__shedule__weekdays">
+										<div class="banya__txt__shedule__weekdays__txt">
+											<div class="banya__txt__shedule__weekdays__txt__title">БУДНИЕ ДНИ</div>
+											<div class="banya__txt__shedule__weekdays__txt__content">- безлимитное обслуживание<br>- с 8.00 до 22.00</div>
+										</div>
+										<div class="banya__txt__shedule__weekdays__price">
+											<div class="banya__txt__shedule__weekdays__price__no-privelege">220 руб – для всех категорий граждан</div>
+											<div class="banya__txt__shedule__weekdays__price__privelege">
+												172 руб – льготный билет (пенсионеры, при наличии пенсионного удостоверения и дети от 0 до 7 лет)
+											</div>
+										</div>
+									</div>
+									<div class="banya__txt__shedule__weekends">
+										<div class="banya__txt__shedule__weekends__txt">
+											<div class="banya__txt__shedule__weekends__txt__title">ВЫХОДНЫЕ ДНИ</div>
+											<div class="banya__txt__shedule__weekends__txt__content">- система по браслетам</div>
+										</div>
+										<div class="banya__txt__shedule__weekends__price">
+											250 руб – для всех категорий граждан, БЕЗ ЛЬГОТ.
+										</div>
+									</div>
+								</div>
+								<div class="banya__txt__contacts">
+									<div class="banya__txt__contacts__tel">
+										ЗАПИСЬ ПО ТЕЛЕФОНУ: 297-26-00 (бАНЯ),<br>20-10-625 (ЧЕРЕЗ АДМИНИСТРАТОРА ФИТНЕС-КЛУБА)
+									</div>
+									<div class="banya__txt__contacts__btns">
+										<div class="banya__txt__contacts__vk">
+											<a href="https://vk.com/banya11_ekb" class="banya__txt__contacts__vk__link">
+												<img src="img/icons/vk.svg" alt="" class="banya__txt__contacts__vk__pic">
+											</a>
+										</div>
+										<div class="banya__txt__contacts__benefit">
+											<a href="#" id='benefit' class="banya__txt__contacts__benefit__link">ПОЛЬЗА РУССКОЙ БАНИ</a>
+										</div>
+										<div class="banya__txt__contacts__rules">
+											<a href="#" id="rules" class="banya__txt__contacts__rules__link">ПРАВИЛА ПОСЕЩЕНИЯ</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="banya-page" class="banya__gallery">
+								<div class="banya__gallery__overlay">
+									<div class="banya__gallery__overlay__title">ФОТОГАЛЕРЕЯ</div>
+								</div>
+								<div data-src="img/photos/banya-1.jpg" class="photo-container">
+									<img src="img/photos/banya-1.jpg" alt="" class="banya__gallery__photo">
+								</div>
+								<div data-src="img/photos/banya-2.jpg" class="photo-container">
+									<img src="img/photos/banya-2.jpg" alt="" class="banya__gallery__photo">
+								</div>
+								<div data-src="img/photos/banya-3.jpg" class="photo-container">
+									<img src="img/photos/banya-3.jpg" alt="" class="banya__gallery__photo">
+								</div>
+								<div data-src="img/photos/banya-4.jpg" class="photo-container">
+									<img src="img/photos/banya-4.jpg" alt="" class="banya__gallery__photo">
+								</div>
+								<div data-src="img/photos/banya-5.jpg" class="photo-container">
+									<img src="img/photos/banya-5.jpg" alt="" class="banya__gallery__photo">
+								</div>
+								<div data-src="img/photos/banya-6.jpg" class="photo-container">
+									<img src="img/photos/banya-6.jpg" alt="" class="banya__gallery__photo">
+								</div>
+							</div>
+						</div>
+					</div> 	
+                </div>
+            </div>
+        </section>
+
+         <section class="section-footer">
+			<footer class="footer footer--sect">
+				<div class="footer__container">
+					<div class="footer__container__col footer__container__col--logo">
+						<img src="img/logo/logo.svg" alt="" class="footer__logo">
+						<div class="footer__copyright">© 2018 ФИТНЕС-КЛУБ "ГРИФФ"</div>
+					</div>
+					<div class="footer__container__col footer__container__col--sitemap">
+						<div class="footer__sitemap">
+							<ul class="footer__sitemap__list footer__sitemap__list--first">
+								<li class="footer__sitemap__list__item">
+									<a href="" style="color: #fea500;" class="footer__sitemap__list__item-link">Вакансии</a>
+								</li>
+								<li class="footer__sitemap__list__item">
+									<a href="index.html" class="footer__sitemap__list__item-link">Главная</a>
+								</li>
+								<li class="footer__sitemap__list__item">
+									<a href="index.html" class="footer__sitemap__list__item-link">Особенности</a>
+								</li>
+								<li class="footer__sitemap__list__item">
+									<a href="index.html" class="footer__sitemap__list__item-link">Оборудование зала</a>
+								</li>
+								<li class="footer__sitemap__list__item">
+									<a href="index.html" class="footer__sitemap__list__item-link">Фотогалерея</a>
+								</li>
+								<li class="footer__sitemap__list__item">
+									<a href="index.html" class="footer__sitemap__list__item-link">Контакты и карта</a>
+								</li>		
+								<li class="footer__sitemap__list__item">
+									<a href="price.html" class="footer__sitemap__list__item-link">Цены и услуги</a>
+								</li>
+								<li class="footer__sitemap__list__item">
+									<a href="price.html" class="footer__sitemap__list__item-link">Абонементы</a>
+								</li>
+								<li class="footer__sitemap__list__item">
+									<a href="shedule.html" class="footer__sitemap__list__item-link">Расписание</a>
+								</li>
+								<li class="footer__sitemap__list__item">
+									<a href="price.html" class="footer__sitemap__list__item-link">Акции и скидки</a>
+								</li>
+								<li class="footer__sitemap__list__item">
+									<a href="sauna.html" class="footer__sitemap__list__item-link">Баня и сауна</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__container__col footer__container__col--socials">
+						<div class="footer__socials">
+							<div class="footer__socials__title">Наши социальные сети:</div>
+							<ul class="footer__socials__list">
+								<li class="footer__socials__list__item">
+									<a href="https://vk.com/griff_zal" class="footer__socials__link">
+										<img src="img/icons/vk.svg" alt="" class="footer__socials__list__item__pic">
+									</a>
+								</li>
+								<li class="footer__socials__list__item">
+									<a href="" class="footer__socials__link">
+										<img src="img/icons/instagram.png" alt="" class="footer__socials__list__item__pic">
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__development"><a href="https://github.com/L3TM3COD3" class="footer__development__link">РАЗРАБОТКА САЙТА - НОСКОВ Н.В.</a></div>
+					</div>
+				</div>
+			</footer>
+		</section>
+	</div>
+	
+	<div class="modal" id="modal_form--rules">
+			<span id="modal_close--rules">X</span>
+			<div class="modal__content">
+				<div class="modal__content__title">
+					ПРАВИЛА ПОСЕЩЕНИЯ ОБЩЕГО ОТДЕЛЕНИЯ БАНИ №11
+				</div>
+				<ol class="modal__content__list">
+					<li class="modal__content__list__item">
+						Обязательно наличие билета
+					</li>
+					<li class="modal__content__list__item">
+						В будни (пн, вт, ср,чт, пт )- безлимитное обслуживание, сб и вс продолжительность одного сеанса 2 часа
+					</li>
+					<li class="modal__content__list__item">
+						Запрещается заносить в помещение общего отделения крепкие спиртные напитки
+					</li>	
+					<li class="modal__content__list__item">
+						Строго запрещается использовать пищевые продукты   ( кофе, кефир, майонез и т.п ), а также сильнопахнущие мази и косметические средства в помещении парилки.
+					</li>
+					<li class="modal__content__list__item">
+						Запрещается красить волосы в тазах общего отделения Бани №11
+					</li>
+					<li class="modal__content__list__item">
+						Запрещается стирать вещи в помывочном отделении
+					</li>
+					<li class="modal__content__list__item">
+						Во избежание засора канализации запрещается пользоваться пихтовыми вениками
+					</li>
+					<li class="modal__content__list__item">
+						Во избежание травм и порезов, запрещается заносить стеклянную посуду в помывочное отделение
+					</li>
+					<li class="modal__content__list__item">
+						Необходимо сдать верхнюю одежду в гардероб, прежде чем зайти в раздевальное отделение бани.
+					</li>
+				</ol><br>
+				<div class="etc">
+					СОБЛЮДАЙТЕ ПРАВИЛА, УВАЖАЙТЕ НЕ ТОЛЬКО СЕБЯ, НО И ОКРУЖАЮЩИХ И ВАШ ОТДЫХ В БАНЕ ВСЕГДА БУДЕТ ПРИЯТНЫМ!<br>
+					Штраф за утерю бирки из гардероба 300 рублей<br>
+					Книга жалоб и предложений находится у кассира. Для написания заявления необходимо обязательно указать: фамилию, имя, отчество, адрес или телефон ( по желанию ) для ответа на ваше заявление.
+				</div>
+			</div>
+	  </div>
+	  <div id="overlay--rules"></div>
+
+	  <div class="modal" id="modal_form--benefit">
+			<span id="modal_close--benefit">X</span>
+			<div class="modal__content modal__content--benefit">
+				<div class="modal__content__title--benefit">Польза русской бани</div>
+				<div class="modal__content__desc--benefit">
+					Полезное воздействие русской бани основывается на постоянной смене температур при высокой влажности, что способствует улучшению кровообращения и высокому потоотделению.
+					Эффект усиливается благодаря применению веников, сделанных из различных пород деревьев (дуб, пихта, можжевельник, сосна, пихта). Аромат смол от веника и их непосредственное контактирование с кожей поднимают общий тонус организма и позволяют излечить многие заболевания.
+					Полезные свойства бани:
+				</div><br>
+				<ol class="modal__content__list">
+					<li class="modal__content__list__item">
+						Расслабление после психофизических нагрузок (для спортсменов, офисных работников, работников физического труда)– пребывание в парной устраняет мышечное утомление, расслабляет мускулатуру, возвращает работоспособность. Стегание веником является своего рода массажем, что повышает эффективность банных процедур в несколько раз.
+					</li>
+					<li class="modal__content__list__item">
+						Улучшение кровообращения – большая потеря жидкости в организме способствует сгущению крови, благодаря чему происходит переход жидкости в кровеносные сосуды и рассасывание различных затвердеваний.
+					</li>
+					<li class="modal__content__list__item">
+						Нормализация обмена веществ- вместе с потом из организма выходят шлаки и все вредные токсины, что способствует очищению организма и восстановлению работы многих внутренних органов.
+					</li>	
+					<li class="modal__content__list__item">
+						Средство для похудения (избавления от целлюлита) – высокие температуры в парилке помогают «растопить» жировую прослойку, а через раскрытые поры организм избавляется от лишних шлаков.
+					</li>
+					<li class="modal__content__list__item">
+						Косметическое воздействие – пар разглаживает морщинки, расширяет поры на коже, улучшает функции сальных и потовых желез. Под воздействием высоких температур ускоряется кровоток, устраняется венозный застой – кожа приобретает приятный здоровый цвет, становится эластичной и упругой.
+					</li>
+					<li class="modal__content__list__item">
+						Лечение простудных заболеваний — повышенное потоотделение и прогревание организма способствует выведению инфекции из организма, а фитонциды, содержащиеся в хвойных вениках, нейтрализуют бактерии и способствуют укреплению иммунитета.
+					</li>
+					<li class="modal__content__list__item">
+						Лечение мочеполовой системы – глубокий прогрев организма вкупе с обильным питьем способствует отхождению камней из мочеточников и мочевого пузыря.
+					</li>
+					<li class="modal__content__list__item">
+						Лечение радикулитов и поясничных болей — за счет прогрева мышц и увеличения кровотока.
+					</li>
+					<li class="modal__content__list__item">
+						Избавление от похмельного синдрома – за счет ускорения кровообращения организм быстрее приходит в норму а накопленный алкоголь быстрее покидает организм через раскрытые поры.
+					</li>
+					<li class="modal__content__list__item">
+						Лечение вегетососудистой дистонии – постоянные перепады из жары в холод и наоборот тренируют и укрепляют сосуды, постепенно сводя симптомы болезни на нет.
+					</li>
+				</ol>	
+				<h2 class="modal__content__title--benefit">Вред русской бани</h2>
+				<div class="modal__content__desc--benefit">
+					Баню нельзя посещать в следующих случаях:
+				</div>	
+				<ol class="modal__content__list">
+					<li class="modal__content__list__item">
+						Во время простуды, сопровождающейся высокой температурой – жара в бане вызовет дополнительную нагрузку на сердце и это может привести к обмороку (или даже остановке сердца)
+					</li>
+					<li class="modal__content__list__item">
+						При проблемах и заболеваниях сердечно-сосудистой системы (в том, числе гипертонии) – это может привести к инфарктам, инсультам, загустению крови и образованию тромбов
+					</li>
+					<li class="modal__content__list__item">
+						При сахарном диабете, глаукоме, артритах, нарушениях в работе щитовидной железы
+					</li>	
+					<li class="modal__content__list__item">
+						При онкологических заболеваниях
+					</li>
+					<li class="modal__content__list__item">
+						В состоянии алкогольного опьянения – повышается нагрузка на сердце
+					</li>
+					<li class="modal__content__list__item">
+						При заболеваниях кожи
+					</li>
+					<li class="modal__content__list__item">
+						При гепатите, эпилепсии, половых заболеваниях
+					</li>
+					<li class="modal__content__list__item">
+						При беременности и во время менструации
+					</li>
+				</ol>
+				<h2 class="modal__content__title--benefit">Как правильно посещать русскую баню.</h2>
+				<div class="modal__content__desc--benefit">
+					Посещение русской бани может обернуться плохим самочувствием и вызвать неприятные последствия, если ты не будешь соблюдать следующие правила:
+				</div>	
+				<ol class="modal__content__list">
+					<li class="modal__content__list__item">
+						Чередуй разогрев и охлаждение. В бане сосуды, кровь и сердце находятся в «боевой готовности» — это опасно для сердца, поэтому контролируй перепады температуры.
+					</li>
+					<li class="modal__content__list__item">
+						Соблюдай меру. Максимальный срок пребывания в бане -3-4 часа. В течение этого времени в парную заходить надо не более четырех раз (на 7-10 минут). Привыкать к жару нужно постепенно.
+					</li>
+					<li class="modal__content__list__item">
+						Используй веник. Цель бани – не перегреться, а достичь хорошего потоотделения. В этом помогают массажные процедуры с веником.
+					</li>	
+					<li class="modal__content__list__item">
+						Не забывай о воде. Из организма выходят вместе с потом не только вредные токсины и шлаки, но и большое количество жидкости. Восполняй эту потерю при помощи травяных чаев, минеральной воды, кваса (пиво и другой алкоголь старайся не употреблять).
+					</li>
+					<li class="modal__content__list__item">
+						Не ходи в баню натощак, но и не переедай. Это создает дополнительную нагрузку на сердце. В результате чего ты будешь испытывать не ожидаемую бодрость, а вялость и слабость.
+					</li>
+					<li class="modal__content__list__item">
+						Не мочи голову перед заходом в парную. Именно сухие волосы защищают голову от перегревания, потому защищай голову с помощью специальных головных уборов.
+					</li>
+				</ol>			
+			</div>
+	  </div>
+	  <div id="overlay--benefit"></div>
+</body>
+<script src="js/lightgallery.min.js"></script>
+<script src="js/lightgallery-settings.js"></script>
+</html>

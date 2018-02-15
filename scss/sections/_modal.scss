@@ -1,0 +1,338 @@
+#modal_form {
+	width: 25%; 
+	height: 35%; 
+	background: $low-orange;
+	position: fixed; 
+	top: 45%;
+	left: 50%; 
+	margin-top: -10%;
+	margin-left: -10%; 
+	display: none; 
+	opacity: 0; 
+	z-index: 500; 
+    padding: 1%;
+
+    &--doc,  &--benefit {
+        width: 35%;
+        height: 75%;  
+        background: white;
+        position: fixed; 
+        border: rem(2px) solid $low-blue;
+        top: 45%;
+        left: 50%; 
+        margin-top: -20%;
+        margin-left: -15%; 
+        display: none;  
+        z-index: 500; 
+        padding: 2%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    &--step, &--pilates,
+    &--yoga, &--cardio,
+    &--energy, &--fit, 
+    &--iron, &--press,
+    &--stretch {
+        width: 60%;
+        background: white;
+        position: fixed; 
+        top: 50%;
+        left: 50%; 
+        margin-top: -15%;
+        margin-left: -30%; 
+        display: none; 
+        opacity: 0; 
+        z-index: 500; 
+        padding: 2%;
+
+        .modal__content__title {
+            font-size: rem(42px);
+            letter-spacing: rem(5px);
+        }
+
+        .modal__content__desc {
+            font-size: rem(22px);
+        }
+    }
+
+    &--rules {
+        width: 60%;
+        background: white;
+        position: fixed; 
+        top: 50%;
+        left: 50%; 
+        margin-top: -18%;
+        margin-left: -30%; 
+        display: none; 
+        opacity: 0; 
+        z-index: 500; 
+        padding: 2%;
+    }
+}
+
+#modal_form #modal_close {
+	width: rem(21px);
+	height: rem(21px);
+	position: absolute;
+	top: rem(10px);
+	right: rem(4px);
+	cursor: pointer;
+    display: block;
+    z-index: 550;
+    transition: .2s;
+
+    &:hover {
+        color: white;
+    }
+}
+
+#modal_form--doc #modal_close--doc {
+    width: rem(21px);
+	height: rem(21px);
+	position: absolute;
+	top: rem(10px);
+	right: rem(4px);
+	cursor: pointer;
+    display: block;
+    z-index: 550;
+    transition: .2s;
+
+    &:hover {
+        color: $low-blue;
+    }
+}
+
+#modal_close--step, 
+#modal_close--pilates,
+#modal_close--yoga, 
+#modal_close--cardio, 
+#modal_close--energy, 
+#modal_close--fit, 
+#modal_close--iron, 
+#modal_close--press, 
+#modal_close--stretch,
+#modal_close--rules, 
+#modal_close--benefit {
+    width: rem(21px);
+	height: rem(21px);
+	position: absolute;
+	top: rem(10px);
+	right: rem(4px);
+	cursor: pointer;
+    display: block;
+    z-index: 550;
+    transition: .2s;
+
+    &:hover {
+        color: $low-orange;
+    }
+}
+
+#overlay,
+#overlay--step,
+#overlay--pilates,
+#overlay--yoga, 
+#overlay--cardio, 
+#overlay--energy, 
+#overlay--fit, 
+#overlay--iron, 
+#overlay--press, 
+#overlay--stretch,
+#overlay--benefit,
+#overlay--rules {
+	z-index: 450; 
+	position:fixed; 
+	background-color:#000; 
+	opacity:0.8; 
+	-moz-opacity:0.8; 
+	filter:alpha(opacity=80);
+	width:100%; 
+	height:100%; 
+	top:0; 
+	left:0;
+	cursor:pointer;
+    display:none; 
+    
+    &--doc {
+        z-index: 450; 
+        position:fixed; 
+        background-color:#000; 
+        opacity:0.8; 
+        -moz-opacity:0.8; 
+        filter:alpha(opacity=80);
+        width:100%; 
+        height:100%; 
+        top:0; 
+        left:0;
+        cursor:pointer;
+        display:none;
+    }
+}
+
+.modal__form__lay {
+    background: $low-orange;
+    width: 100%;
+    height: 100%;
+}
+    
+.modal__form {
+    background: $low-orange;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    &__title {
+        text-align: center;
+        font-size: rem(32px);
+        letter-spacing: rem(5px);
+        color: white;
+        text-transform: uppercase;
+    }
+    
+    &__name {
+        height: 15%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__name__row__input {
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        outline: none;
+        border: none;
+        border-bottom: rem(2px) solid white;
+        transition: .3s;
+        color: white;
+        border-radius: rem(2px);
+        background: $low-orange;
+        font-family: pobedabold;
+        font-size: rem(24px);
+
+        @include placeholder {
+            color: white;
+        }
+
+        &:focus {
+            color: white;
+
+            @include placeholder  {
+                color: transparent;
+            }
+        }
+    }
+
+    &__tel {
+        height: 15%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__tel__row__input {
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        outline: none;
+        border: none;
+        border-bottom: rem(2px) solid white;
+        transition: .3s;
+        color: white;
+        border-radius: rem(2px);
+        background: $low-orange;
+        font-family: pobedabold;
+        font-size: rem(24px);
+
+        @include placeholder {
+            color: white;
+        }
+
+        &:focus {
+            color: white;
+
+            @include placeholder  {
+                color: transparent;
+            }
+        }
+    }
+}
+
+.modal__form__submit {
+    width: 40%;
+    height: 12%;
+    background-color: white;
+    color: $black;
+    cursor: pointer;
+    transition: .3s;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    font-family: cervo;
+    font-size: rem(20px);
+    letter-spacing: rem(3px);
+
+    &:hover {
+        background: $black;
+        color: white;
+    }
+}
+
+.modal__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__btn {
+        color: $black;
+        text-transform: uppercase;
+        margin-top: 3%;
+        font-size: 21px;
+        background: $low-orange;
+        height: 100%;
+        padding: 1%;
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+
+        &:hover {
+            color: white;
+            background: $black;
+        }
+    }
+
+    &__desc--benefit {
+        font-size: rem(20px);
+        margin-bottom: 2%;
+    }
+
+    &__title {
+        font-size: rem(20px);
+        color: $black;
+        text-transform: uppercase;
+        margin-bottom: 5%;
+
+        &--benefit {
+            font-size: rem(32px);
+            color: $black;
+            text-transform: uppercase;
+            margin-bottom: 5%;
+            margin-top: 5%;
+        }
+    }
+
+    &__list {
+        font-size: rem(18px);
+        list-style: inside square; 
+    }
+}
+
+.etc {
+    font-size: rem(20px);
+}

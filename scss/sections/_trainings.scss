@@ -1,0 +1,342 @@
+.list {
+    background-image: url('../../img/bg/trainings-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 90%;
+    }
+
+    &__content {
+        width: 90%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        &__txt {
+            width: 40%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            @include normal {
+                height: 83%;   
+            }
+            
+            &__title {
+                color: $black;
+                text-transform: uppercase;
+                line-height: 1.5;
+                font-size: rem(72px);
+                
+                @include normal {
+                    font-size: 60px;   
+                }
+
+                .athlete-marker {
+                    background: white;
+                    padding-left: 2%;
+                    padding-right: 2%;
+                }
+            }
+
+            &__desc {
+                color: white;
+                font-size: rem(24px);
+            }
+
+            &__btns {
+                height: 15%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &__link-one {
+                    background: white;
+                    height: 100%;
+                    width: 50%;
+                    color: $black;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-transform: uppercase;
+                    font-size: rem(22px);
+                    transition: .3s;
+                    -webkit-box-shadow: rem(0px) rem(10px) rem(42px) rem(3px) rgba(0,0,0,0.77);
+                    -moz-box-shadow: rem(0px) rem(10px) rem(42px) rem(3px) rgba(0,0,0,0.77);
+                    box-shadow: rem(0px) rem(10px) rem(42px) rem(3px) rgba(0,0,0,0.77);
+
+                    @include normal {
+                        width: 55%;        
+                    }
+
+                    &:hover {
+                        transform: translateY(rem(10px));
+                        -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                        -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                        box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                        background: $low-orange;
+                    }
+                }
+
+                &__link-two {
+                    background: white;
+                    height: 100%;
+                    width: 40%;
+                    color: $black;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-transform: uppercase;
+                    font-size: rem(22px);
+                    transition: .3s;
+                    -webkit-box-shadow: rem(0px) rem(10px) rem(42px) rem(3px) rgba(0,0,0,0.77);
+                    -moz-box-shadow: rem(0px) rem(10px) rem(42px) rem(3px) rgba(0,0,0,0.77);
+                    box-shadow: rem(0px) rem(10px) rem(42px) rem(3px) rgba(0,0,0,0.77);
+
+                    &:hover {
+                        transform: translateY(rem(10px));
+                        -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                        -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                        box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                        background: $low-orange;
+                    }
+                }
+            }
+        }
+
+        &__ways {
+            width: 50%;
+            height: 100%;
+            border: rem(15px) solid white;
+            padding: 2%;
+
+            &__list {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-flow: wrap row;
+                justify-content: space-between;
+                align-content: space-between;
+
+                &__item {
+                    width: 30%;
+                    height: 30%;
+                    position: relative;
+                    overflow: hidden;
+
+                    &:hover .list__content__ways__list__item__overlay__hover {
+                        opacity: 1;
+                    }
+
+                    &:hover .list__content__ways__list__item__overlay__title {
+                        opacity: 0;
+                    }
+
+                    &:hover .list__content__ways__list__item__overlay {
+                        background: rgba(255, 255, 255, 1);
+                    }
+
+                    &__overlay {
+                        background: rgba(254, 165, 0, .70);
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: .3s;
+
+                        &__title {
+                            text-transform: uppercase;
+                            font-size: rem(32px);
+                            letter-spacing: rem(5px);
+                            transition: .3s;
+                            text-align: center;
+                        }
+
+                        &__hover {
+                            position: absolute;
+                            text-transform: uppercase;
+                            font-size: rem(32px);
+                            letter-spacing: rem(5px);
+                            opacity: 0;
+                            transition: .3s;
+                            color: $black;
+                        }
+                    }
+
+                    &--step {
+                        background-image: url('../../img/content/step.jpg');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        -webkit-box-shadow: rem(15px) rem(15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        -moz-box-shadow: rem(15px) rem(15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        box-shadow: rem(15px) rem(15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        transition: .3s;
+
+                        &:hover {
+                            -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            transform: translate(rem(10px), rem(10px));
+                        }
+                    }
+
+                    &--pilates {
+                        background-image: url('../../img/content/pilates.jpg');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        -webkit-box-shadow: rem(0px) rem(15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        -moz-box-shadow: rem(0px) rem(15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        box-shadow: rem(0px) rem(15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        transition: .3s;
+
+                        &:hover {
+                            -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            transform: translate(rem(0px), rem(10px));
+                        }
+                    }
+
+                    &--yoga {
+                        background-image: url('../../img/content/group_yoga-2.jpg');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        -webkit-box-shadow: rem(-15px) rem(15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        -moz-box-shadow: rem(-15px) rem(15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        box-shadow: rem(-15px) rem(15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        transition: .3s;
+
+                        &:hover {
+                            -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            transform: translate(rem(-10px), rem(10px));
+                        }
+                    }
+
+                    &--cardio {
+                        background-image: url('../../img/content/cardio.jpg');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        -webkit-box-shadow: rem(15px) rem(0px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        -moz-box-shadow: rem(15px) rem(0px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        box-shadow: rem(15px) rem(0px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        transition: .3s;
+
+                        &:hover {
+                            -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            transform: translate(rem(10px), rem(0px));
+                        }
+                    }
+
+                    &--body-energy {
+                        background-image: url('../../img/content/energy.jpg');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        -webkit-box-shadow: rem(0px) rem(0px) rem(69px) rem(3px) rgba(0,0,0,0.79);
+                        -moz-box-shadow: rem(0px) rem(0px) rem(69px) rem(3px) rgba(0,0,0,0.79);
+                        box-shadow: rem(0px) rem(0px) rem(69px) rem(3px) rgba(0,0,0,0.79);
+                        transition: .3s;
+
+                        &:hover {
+                            -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                        }
+                    }
+
+                    &--best-fit {
+                        background-image: url('../../img/content/best-fit.jpg');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        -webkit-box-shadow: rem(-15px) rem(0px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        -moz-box-shadow: rem(-15px) rem(0px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        box-shadow: rem(-15px) rem(0px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        transition: .3s;
+
+                        &:hover {
+                            -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            transform: translate(rem(-10px), rem(0px));
+                        }
+                    }
+
+                    &--hot-iron {
+                        background-image: url('../../img/content/hot-iron.jpg');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        -webkit-box-shadow: rem(15px) rem(-15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        -moz-box-shadow: rem(15px) rem(-15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        box-shadow: rem(15px) rem(-15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        transition: .3s;
+
+                        &:hover {
+                            -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            transform: translate(rem(10px), rem(-10px));
+                        }
+                    }
+
+                    &--iron-press {
+                        background-image: url('../../img/content/press.jpg');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        -webkit-box-shadow: rem(0px) rem(-15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        -moz-box-shadow: rem(0px) rem(-15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        box-shadow: rem(0px) rem(-15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        transition: .3s;
+
+                        &:hover {
+                            -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            transform: translate(rem(0px), rem(-10px));
+                        }
+                    }
+
+                    &--stretch {
+                        background-image: url('../../img/content/athletic_stretch.jpg');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        -webkit-box-shadow: rem(-15px) rem(-15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        -moz-box-shadow: rem(-15px) rem(-15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        box-shadow: rem(-15px) rem(-15px) rem(39px) rem(-1px) rgba(0,0,0,0.75);
+                        transition: .3s;
+                        
+                        &:hover {
+                            -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
+                            transform: translate(rem(-10px), rem(-10px));
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

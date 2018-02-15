@@ -1,0 +1,136 @@
+.slider__slides__adv {
+    background: white;
+
+    &__title {
+        color: $high-orange;
+        font-size: rem(80px);
+        position: absolute;
+        top: 0%;
+        left: 8%;
+        text-transform: uppercase;
+        opacity: .4;
+        letter-spacing: rem(70px);
+
+        @include normal {
+            font-size: 64px;
+            top: 1%;
+            left: 5%;               
+        }
+    }
+
+    &__list {
+        height: 80%;
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 7%;
+        margin-right: 8%;
+
+        @include normal {
+            height: 75%;
+            margin-top: 8%;              
+        }
+
+        &__item {
+            height: 20%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &__icon-block {
+                height: 80%;
+                width: 15%;
+
+                @include normal {
+                    height: 75%;
+                    width: 13%;    
+                }
+
+                &--1 {
+                    background: url('../../img/icons/14.svg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+
+                &--2 {
+                    background: url('../../img/icons/diplom.svg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+
+                &--3 {
+                    background: url('../../img/icons/group.svg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+
+                &--4 {
+                    background: url('../../img/icons/sauna.svg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+            }
+
+            &__txt {
+                width: 80%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+
+                @include normal {
+                    width: 85%; 
+                 }
+
+                &__title {
+                    text-transform: uppercase;
+                    text-decoration: underline;
+                    font-family: pobedabold;
+                    font-size: rem(28px);
+                    height: 20%;
+
+                    @include normal {
+                        font-size: 21px;
+                    }
+                }
+
+                &__desc {
+                    height: 72%;
+                    font-family: cervo;
+                    font-size: rem(20px);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    line-height: 1.3;
+
+                    @include normal {
+                        font-size: 18px;    
+                    }
+
+                    &__more {
+                        transition: .3s;
+
+                        &:hover {
+                            transform: translateX(rem(10px));
+                        }
+
+                        &__link {
+                            color: $black;
+                            transition: .3s;
+
+                            &:hover {
+                                color: $high-orange;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
