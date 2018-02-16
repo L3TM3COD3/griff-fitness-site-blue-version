@@ -1,5 +1,5 @@
 .hero {
-    background-image: url('../../img/bg/hero-bg.png');
+    background-image: url('../../img/bg/hero-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-box-shadow: rem(0px) rem(9px) rem(60px) rem(-1px) rgba(0,0,0,0.75);
@@ -134,8 +134,8 @@
                         width: 20%;
 
                         &:hover {
-                            background-image: linear-gradient(190deg, $high-blue, $low-blue);
-                           color: white;
+                            background: $high-blue;
+                            color: white;
                         }
                     }
 
@@ -143,15 +143,16 @@
                         width: 20%;
 
                         &:hover {
-                            background-image: linear-gradient(190deg, $high-blue, $low-blue);
+                            background: $high-blue;
                             color: white;
                         }
                     }
 
                     &--three {
+                        display: none;
 
                         &:hover {
-                            background-image: linear-gradient(190deg, $high-orange, $low-orange);
+                            background: $high-blue;
                             color: white;
                             
                         }

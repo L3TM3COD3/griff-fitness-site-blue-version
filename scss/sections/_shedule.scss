@@ -34,10 +34,10 @@ table.blueTable {
     border: rem(1px) solid $black;
   }
   table.blueTable thead {
-    background: $low-orange;
+    background: $high-blue;
   }
   table.blueTable thead th {
-    border-right: rem(1px) solid $low-orange;
+    border-right: rem(1px) solid white;
     background: $black;
     padding: 1%;
     font-size: rem(24px);
@@ -64,5 +64,5 @@ table.blueTable {
   }
 
 .table__time {
-    background: $low-orange;
+    background: $high-blue;
 }

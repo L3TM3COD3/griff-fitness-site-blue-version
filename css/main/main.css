@@ -119,7 +119,7 @@ a {
   .header--price {
     height: 10%;
     width: 100%;
-    border-bottom: 0.0625rem solid #fea500; }
+    border-bottom: 0.0625rem solid #67d4fb; }
   .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -132,10 +132,9 @@ a {
     align-items: center;
     width: 90%; }
   .header__main {
-    border: 0.0625rem solid black;
     height: 70%;
-    background: #333333;
-    color: white;
+    background: white;
+    color: #333333;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -149,10 +148,9 @@ a {
       .header__main {
         height: 65%; } }
     .header__main--price {
-      border: 0.0625rem solid black;
       height: 100%;
-      background: #333333;
-      color: white;
+      background: white;
+      color: #333333;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -163,7 +161,7 @@ a {
       -ms-flex-align: center;
       align-items: center; }
     .header__main__logo {
-      width: 10%; }
+      width: 13%; }
     .header__main__menu {
       width: 50%; }
       .header__main__menu__list {
@@ -187,7 +185,7 @@ a {
             -ms-transform: translateY(10%);
             transform: translateY(10%); }
         .header__main__menu__list__item__link {
-          color: white;
+          color: #333333;
           -webkit-transition: .3s;
           -o-transition: .3s;
           transition: .3s;
@@ -197,11 +195,11 @@ a {
           padding-left: 0.375rem;
           padding-right: 0.375rem; }
           .header__main__menu__list__item__link:hover {
-            color: #333333;
-            background-color: white; }
+            color: white;
+            background-color: #0060ff; }
           .header__main__menu__list__item__link--active {
-            color: #333333;
-            background: white;
+            color: white;
+            background: #0060ff;
             padding-left: 0.375rem;
             padding-right: 0.375rem; }
     .header__main__contacts {
@@ -221,12 +219,13 @@ a {
       justify-content: space-between;
       letter-spacing: 0.125rem; }
       .header__main__contacts__phone__link {
+        color: #333333;
         float: right;
         -webkit-transition: .3s;
         -o-transition: .3s;
         transition: .3s; }
         .header__main__contacts__phone__link:hover {
-          color: #fea500; }
+          color: #0060ff; }
       .header__main__contacts__shedule {
         position: relative; }
         .header__main__contacts__shedule:hover .header__main__contacts__shedule__dropdown {
@@ -234,13 +233,13 @@ a {
           opacity: 1; }
         .header__main__contacts__shedule__title {
           font-style: normal;
-          color: #fea500;
+          color: #0060ff;
           -webkit-transition: .3s;
           -o-transition: .3s;
           transition: .3s;
           cursor: pointer; }
           .header__main__contacts__shedule__title:hover {
-            color: white; }
+            color: #333333; }
         .header__main__contacts__shedule__dropdown {
           z-index: 15;
           padding: 10%;
@@ -303,10 +302,10 @@ a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background: -webkit-gradient(linear, right top, left top, from(#ff6600), color-stop(60%, #fea500));
-    background: -webkit-linear-gradient(right, #ff6600, #fea500 60%);
-    background: -o-linear-gradient(right, #ff6600, #fea500 60%);
-    background: linear-gradient(270deg, #ff6600, #fea500 60%); }
+    background: -webkit-gradient(linear, right top, left top, from(#67d4fb), color-stop(60%, #0060ff));
+    background: -webkit-linear-gradient(right, #67d4fb, #0060ff 60%);
+    background: -o-linear-gradient(right, #67d4fb, #0060ff 60%);
+    background: linear-gradient(270deg, #67d4fb, #0060ff 60%); }
     @media screen and (max-width: 1380px) {
       .header__sub {
         height: 35%; } }
@@ -356,7 +355,7 @@ a {
             text-decoration: underline; } }
 
 .hero {
-  background-image: url("../../img/bg/hero-bg.png");
+  background-image: url("../../img/bg/hero-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-box-shadow: 0rem 0.5625rem 3.75rem -0.0625rem rgba(0, 0, 0, 0.75);
@@ -463,7 +462,7 @@ a {
             -ms-transform: translateX(0.3125rem);
             transform: translateX(0.3125rem);
             text-decoration: none;
-            color: #ff6600; }
+            color: #67d4fb; }
     .hero__content__buttons {
       height: 15%;
       width: 100%; }
@@ -509,22 +508,18 @@ a {
           .hero__content__buttons__list__link--one {
             width: 20%; }
             .hero__content__buttons__list__link--one:hover {
-              background-image: -webkit-linear-gradient(260deg, #67d4fb, #0060ff);
-              background-image: -o-linear-gradient(260deg, #67d4fb, #0060ff);
-              background-image: linear-gradient(190deg, #67d4fb, #0060ff);
+              background: #67d4fb;
               color: white; }
           .hero__content__buttons__list__link--two {
             width: 20%; }
             .hero__content__buttons__list__link--two:hover {
-              background-image: -webkit-linear-gradient(260deg, #67d4fb, #0060ff);
-              background-image: -o-linear-gradient(260deg, #67d4fb, #0060ff);
-              background-image: linear-gradient(190deg, #67d4fb, #0060ff);
+              background: #67d4fb;
               color: white; }
-          .hero__content__buttons__list__link--three:hover {
-            background-image: -webkit-linear-gradient(260deg, #ff6600, #fea500);
-            background-image: -o-linear-gradient(260deg, #ff6600, #fea500);
-            background-image: linear-gradient(190deg, #ff6600, #fea500);
-            color: white; }
+          .hero__content__buttons__list__link--three {
+            display: none; }
+            .hero__content__buttons__list__link--three:hover {
+              background: #67d4fb;
+              color: white; }
 
 .section-footer {
   height: 25%;
@@ -546,7 +541,7 @@ a {
   .footer--sect {
     height: 100%;
     width: 100%;
-    border-top: 0.0625rem solid #fea500; }
+    border-top: 0.0625rem solid #67d4fb; }
   .footer__container {
     height: 80%;
     width: 97%;
@@ -570,11 +565,10 @@ a {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between; }
+        -ms-flex-pack: distribute;
+        justify-content: space-around; }
         .footer__container__col--logo .footer__logo {
-          width: 40%; }
+          width: 80%; }
         .footer__container__col--logo .footer__copyright {
           color: #666666;
           text-transform: uppercase; }
@@ -699,10 +693,10 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background: -webkit-gradient(linear, right top, left top, from(#ff6600), to(#fea500));
-  background: -webkit-linear-gradient(right, #ff6600, #fea500);
-  background: -o-linear-gradient(right, #ff6600, #fea500);
-  background: linear-gradient(270deg, #ff6600, #fea500);
+  background: -webkit-gradient(linear, right top, left top, from(#67d4fb), to(#0060ff));
+  background: -webkit-linear-gradient(right, #67d4fb, #0060ff);
+  background: -o-linear-gradient(right, #67d4fb, #0060ff);
+  background: linear-gradient(270deg, #67d4fb, #0060ff);
   -webkit-box-shadow: 0rem 0.5625rem 3.75rem -0.0625rem rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0rem 0.5625rem 3.75rem -0.0625rem rgba(0, 0, 0, 0.75);
   box-shadow: 0rem 0.5625rem 3.75rem -0.0625rem rgba(0, 0, 0, 0.75);
@@ -719,8 +713,8 @@ a {
     flex-direction: row-reverse;
     position: relative; }
   .slider__slides {
-    border-bottom: 0.3125rem solid #ff6600;
-    border-left: 0.3125rem solid #ff6600;
+    border-bottom: 0.3125rem solid #67d4fb;
+    border-left: 0.3125rem solid #67d4fb;
     background: white;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
@@ -764,8 +758,8 @@ a {
     height: 60%;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
-    border-bottom: 0.3125rem solid #fea500;
-    border-right: 0.3125rem solid #fea500;
+    border-bottom: 0.3125rem solid #67d4fb;
+    border-right: 0.3125rem solid #67d4fb;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -857,7 +851,7 @@ a {
 .slider__slides__adv {
   background: white; }
   .slider__slides__adv__title {
-    color: #ff6600;
+    color: #0060ff;
     font-size: 5rem;
     position: absolute;
     top: 0%;
@@ -985,7 +979,7 @@ a {
               -o-transition: .3s;
               transition: .3s; }
               .slider__slides__adv__list__item__txt__desc__more__link:hover {
-                color: #ff6600; }
+                color: #67d4fb; }
 
 .slider__slides__equip {
   background: white; }
@@ -1144,7 +1138,7 @@ a {
         -webkit-transform: translateY(0.25rem);
         -ms-transform: translateY(0.25rem);
         transform: translateY(0.25rem);
-        background: #fea500; }
+        background: #67d4fb; }
       .paginator__list__item__desc {
         color: #333333;
         background: white;
@@ -1170,17 +1164,17 @@ a {
 
 .gallery {
   height: 10%;
-  background: #333333; }
+  background: white; }
   .gallery-overlay {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0rem;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 96, 255, 0.6);
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
-    color: #fea500;
+    color: white;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1190,7 +1184,7 @@ a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    border-bottom: 0.3125rem solid #fea500; }
+    border-bottom: 0.3125rem solid white; }
   .gallery__container {
     width: 100%;
     height: 100%;
@@ -1284,7 +1278,7 @@ a {
         background-size: cover; }
 
 .section-name {
-  color: white;
+  color: #333333;
   font-size: 12.5rem;
   position: absolute;
   top: 38%;
@@ -1373,9 +1367,7 @@ a {
     .map__container__txt__form {
       width: 90%;
       height: 45%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
+      display: none;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1422,9 +1414,9 @@ a {
             -o-transition: .3s;
             transition: .3s; }
             .map__container__txt__form__row .input__row__name:hover {
-              border: 0.125rem solid #fea500; }
+              border: 0.125rem solid #0060ff; }
             .map__container__txt__form__row .input__row__name:focus {
-              border: 0.125rem solid #fea500;
+              border: 0.125rem solid #0060ff;
               color: #333333; }
             .map__container__txt__form__row .input__row__name[placeholder] {
               padding-left: 0.625rem; }
@@ -1436,9 +1428,9 @@ a {
             -o-transition: .3s;
             transition: .3s; }
             .map__container__txt__form__row .input__row__tel:hover {
-              border: 0.125rem solid #fea500; }
+              border: 0.125rem solid #0060ff; }
             .map__container__txt__form__row .input__row__tel:focus {
-              border: 0.125rem solid #fea500;
+              border: 0.125rem solid #0060ff;
               color: #333333; }
             .map__container__txt__form__row .input__row__tel[placeholder] {
               padding-left: 0.625rem; }
@@ -1459,7 +1451,7 @@ a {
   -o-transition: .3s;
   transition: .3s; }
   .submit-btn:hover {
-    border: 2px solid #fea500; }
+    border: 2px solid #0060ff; }
 
 .ticket {
   background-image: url("../../img/bg/price-bg.jpg");
@@ -1537,15 +1529,15 @@ a {
               font-size: 3.375rem; }
               .ticket__container .ticket__btns__col--first .ticket__offer__title__name {
                 font-style: italic;
-                color: #fea500; }
+                color: #67d4fb; }
             .ticket__container .ticket__btns__col--first .ticket__offer__content {
               font-size: 1.625rem; }
               .ticket__container .ticket__btns__col--first .ticket__offer__content__add {
                 font-size: 1.375rem; }
               .ticket__container .ticket__btns__col--first .ticket__offer__content .desc-marker {
-                color: #fea500; }
+                color: #67d4fb; }
               .ticket__container .ticket__btns__col--first .ticket__offer__content .add-link {
-                color: #fea500;
+                color: #67d4fb;
                 text-decoration: underline; }
                 .ticket__container .ticket__btns__col--first .ticket__offer__content .add-link:hover {
                   text-decoration: none; }
@@ -1653,7 +1645,7 @@ a {
                   border: 0.125rem solid transparent; }
                   .ticket__container .ticket__btns__col--first .ticket__athlete__btn__content__col__item--spec {
                     padding: 6%;
-                    background: #fea500;
+                    background: #0060ff;
                     height: 100%;
                     width: 100%;
                     display: -webkit-box;
@@ -1675,13 +1667,13 @@ a {
                     border: 0.125rem solid transparent; }
                     .ticket__container .ticket__btns__col--first .ticket__athlete__btn__content__col__item--spec__title {
                       font-size: 1.5rem;
-                      color: #333333;
+                      color: white;
                       text-transform: uppercase; }
                       .ticket__container .ticket__btns__col--first .ticket__athlete__btn__content__col__item--spec__title .month-marker {
-                        color: white; }
+                        color: #67d4fb; }
                     .ticket__container .ticket__btns__col--first .ticket__athlete__btn__content__col__item--spec__price {
                       font-size: 2.25rem;
-                      color: #333333;
+                      color: white;
                       text-transform: uppercase; }
                     .ticket__container .ticket__btns__col--first .ticket__athlete__btn__content__col__item--spec__link {
                       font-size: 1.5rem;
@@ -1701,7 +1693,8 @@ a {
                       align-items: center;
                       -webkit-transition: .3s;
                       -o-transition: .3s;
-                      transition: .3s; }
+                      transition: .3s;
+                      display: none; }
                       .ticket__container .ticket__btns__col--first .ticket__athlete__btn__content__col__item--spec__link:hover {
                         background: white;
                         color: #333333; }
@@ -1716,16 +1709,16 @@ a {
                     -moz-box-shadow: 0rem 0.875rem 2.1875rem 0.1875rem rgba(0, 0, 0, 0.75);
                     box-shadow: 0rem 0.875rem 2.1875rem 0.1875rem rgba(0, 0, 0, 0.75);
                     z-index: 5;
-                    border: 0.125rem solid #fea500; }
+                    border: 0.125rem solid #67d4fb; }
                   .ticket__container .ticket__btns__col--first .ticket__athlete__btn__content__col__item__title {
                     font-size: 1.25rem;
                     color: white;
                     text-transform: uppercase; }
                     .ticket__container .ticket__btns__col--first .ticket__athlete__btn__content__col__item__title .month-marker {
-                      color: #fea500; }
+                      color: #67d4fb; }
                   .ticket__container .ticket__btns__col--first .ticket__athlete__btn__content__col__item__price {
                     font-size: 1.5625rem;
-                    color: #fea500;
+                    color: #67d4fb;
                     text-transform: uppercase; }
                   .ticket__container .ticket__btns__col--first .ticket__athlete__btn__content__col__item__link {
                     font-size: 1.125rem;
@@ -1745,9 +1738,10 @@ a {
                     align-items: center;
                     -webkit-transition: .3s;
                     -o-transition: .3s;
-                    transition: .3s; }
+                    transition: .3s;
+                    display: none; }
                     .ticket__container .ticket__btns__col--first .ticket__athlete__btn__content__col__item__link:hover {
-                      background: #fea500;
+                      background: #0060ff;
                       color: #333333; }
         .ticket__container .ticket__btns__col--second {
           display: -webkit-box;
@@ -1892,10 +1886,10 @@ a {
                       color: white;
                       text-transform: uppercase; }
                       .ticket__container .ticket__btns__col--second .ticket__athlete__btn__content__col__item--spec__title .month-marker {
-                        color: #333333; }
+                        color: #67d4fb; }
                     .ticket__container .ticket__btns__col--second .ticket__athlete__btn__content__col__item--spec__price {
                       font-size: 2.25rem;
-                      color: white;
+                      color: #67d4fb;
                       text-transform: uppercase; }
                     .ticket__container .ticket__btns__col--second .ticket__athlete__btn__content__col__item--spec__link {
                       font-size: 1.5rem;
@@ -1915,7 +1909,8 @@ a {
                       align-items: center;
                       -webkit-transition: .3s;
                       -o-transition: .3s;
-                      transition: .3s; }
+                      transition: .3s;
+                      display: none; }
                       .ticket__container .ticket__btns__col--second .ticket__athlete__btn__content__col__item--spec__link:hover {
                         background: #333333;
                         color: white; }
@@ -1924,7 +1919,7 @@ a {
                       -moz-box-shadow: 0rem 0.875rem 2.1875rem 0.1875rem rgba(0, 0, 0, 0.75);
                       box-shadow: 0rem 0.875rem 2.1875rem 0.1875rem rgba(0, 0, 0, 0.75);
                       z-index: 5;
-                      border: 0.125rem solid #333333; }
+                      border: 0.125rem solid white; }
                   .ticket__container .ticket__btns__col--second .ticket__athlete__btn__content__col__item:hover {
                     -webkit-box-shadow: 0rem 0.875rem 2.1875rem 0.1875rem rgba(0, 0, 0, 0.75);
                     -moz-box-shadow: 0rem 0.875rem 2.1875rem 0.1875rem rgba(0, 0, 0, 0.75);
@@ -1959,7 +1954,8 @@ a {
                     align-items: center;
                     -webkit-transition: .3s;
                     -o-transition: .3s;
-                    transition: .3s; }
+                    transition: .3s;
+                    display: none; }
                     .ticket__container .ticket__btns__col--second .ticket__athlete__btn__content__col__item__link:hover {
                       background: #0060ff;
                       color: white; }
@@ -2050,13 +2046,13 @@ a {
                   color: white;
                   text-transform: uppercase; }
                   .ticket__container .ticket__btns__col__row__col-list__col__content__title .month-marker {
-                    color: #fea500; }
+                    color: #67d4fb; }
                 .ticket__container .ticket__btns__col__row__col-list__col__content__price {
                   font-size: 1.125rem;
                   color: white;
                   text-transform: uppercase; }
                   .ticket__container .ticket__btns__col__row__col-list__col__content__price .month-marker {
-                    color: #fea500; }
+                    color: #67d4fb; }
                 .ticket__container .ticket__btns__col__row__col-list__col__content__link {
                   font-size: 1.125rem;
                   background: white;
@@ -2075,9 +2071,10 @@ a {
                   align-items: center;
                   -webkit-transition: .3s;
                   -o-transition: .3s;
-                  transition: .3s; }
+                  transition: .3s;
+                  display: none; }
                   .ticket__container .ticket__btns__col__row__col-list__col__content__link:hover {
-                    background: #fea500;
+                    background: #0060ff;
                     color: #333333; }
               .ticket__container .ticket__btns__col__row__col-list__col--second {
                 padding: 5%;
@@ -2102,7 +2099,7 @@ a {
                 .ticket__container .ticket__btns__col__row__col-list__col--second-link {
                   color: #333333; }
                 .ticket__container .ticket__btns__col__row__col-list__col--second:hover {
-                  border: 0.125rem solid #fea500;
+                  border: 0.125rem solid #0060ff;
                   -webkit-transform: translateX(0.9375rem);
                   -ms-transform: translateX(0.9375rem);
                   transform: translateX(0.9375rem);
@@ -2145,7 +2142,7 @@ a {
 #modal_form {
   width: 25%;
   height: 35%;
-  background: #fea500;
+  background: #0060ff;
   position: fixed;
   top: 45%;
   left: 50%;
@@ -2263,7 +2260,7 @@ a {
   #modal_close--stretch:hover,
   #modal_close--rules:hover,
   #modal_close--benefit:hover {
-    color: #fea500; }
+    color: #0060ff; }
 
 #overlay,
 #overlay--step,
@@ -2315,12 +2312,12 @@ a {
     display: none; }
 
 .modal__form__lay {
-  background: #fea500;
+  background: #0060ff;
   width: 100%;
   height: 100%; }
 
 .modal__form {
-  background: #fea500;
+  background: #0060ff;
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -2362,7 +2359,7 @@ a {
     transition: .3s;
     color: white;
     border-radius: 0.125rem;
-    background: #fea500;
+    background: #0060ff;
     font-family: pobedabold;
     font-size: 1.5rem; }
     .modal__form__name__row__input::-webkit-input-placeholder {
@@ -2404,7 +2401,7 @@ a {
     transition: .3s;
     color: white;
     border-radius: 0.125rem;
-    background: #fea500;
+    background: #0060ff;
     font-family: pobedabold;
     font-size: 1.5rem; }
     .modal__form__tel__row__input::-webkit-input-placeholder {
@@ -2461,7 +2458,7 @@ a {
     text-transform: uppercase;
     margin-top: 3%;
     font-size: 21px;
-    background: #fea500;
+    background: #0060ff;
     height: 100%;
     padding: 1%;
     width: 25%;
@@ -2604,7 +2601,7 @@ a {
             -webkit-box-shadow: 0rem 0rem 0rem 0rem transparent;
             -moz-box-shadow: 0rem 0rem 0rem 0rem transparent;
             box-shadow: 0rem 0rem 0rem 0rem transparent;
-            background: #fea500; }
+            background: #0060ff; }
         .list__content__txt__btns__link-two {
           background: white;
           height: 100%;
@@ -2634,7 +2631,7 @@ a {
             -webkit-box-shadow: 0rem 0rem 0rem 0rem transparent;
             -moz-box-shadow: 0rem 0rem 0rem 0rem transparent;
             box-shadow: 0rem 0rem 0rem 0rem transparent;
-            background: #fea500; }
+            background: #0060ff; }
     .list__content__ways {
       width: 50%;
       height: 100%;
@@ -2667,7 +2664,7 @@ a {
           .list__content__ways__list__item:hover .list__content__ways__list__item__overlay {
             background: white; }
           .list__content__ways__list__item__overlay {
-            background: rgba(254, 165, 0, 0.7);
+            background: rgba(0, 96, 255, 0.5);
             width: 100%;
             height: 100%;
             position: absolute;
@@ -2903,10 +2900,10 @@ table.blueTable tbody td {
   border: 0.0625rem solid #333333; }
 
 table.blueTable thead {
-  background: #fea500; }
+  background: #67d4fb; }
 
 table.blueTable thead th {
-  border-right: 0.0625rem solid #fea500;
+  border-right: 0.0625rem solid white;
   background: #333333;
   padding: 1%;
   font-size: 1.5rem;
@@ -2931,7 +2928,7 @@ table.blueTable tfoot td {
   font-style: italic; }
 
 .table__time {
-  background: #fea500; }
+  background: #67d4fb; }
 
 .sauna {
   background: url("../../img/bg/banya-bg.jpg");
@@ -3056,7 +3053,7 @@ table.blueTable tfoot td {
         .sauna__content__sauna .sauna__txt__price {
           font-size: 1.5rem;
           text-transform: uppercase;
-          color: #fea500; }
+          color: #0060ff; }
         .sauna__content__sauna .sauna__txt__contacts {
           color: white;
           background: #333333;
@@ -3107,7 +3104,7 @@ table.blueTable tfoot td {
           -o-transition: .3s;
           transition: .3s; }
           .sauna__content__sauna .sauna__gallery .photo-container:hover {
-            border: 0.125rem solid #fea500; }
+            border: 0.125rem solid #67d4fb; }
           .sauna__content__sauna .sauna__gallery .photo-container .sauna__gallery__photo {
             width: 100%;
             height: 100%; }
@@ -3120,7 +3117,7 @@ table.blueTable tfoot td {
           -webkit-transition: .5s;
           -o-transition: .5s;
           transition: .5s;
-          color: #fea500;
+          color: #67d4fb;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -3130,7 +3127,7 @@ table.blueTable tfoot td {
           -webkit-box-align: center;
           -ms-flex-align: center;
           align-items: center;
-          border-top: 0.3125rem solid #fea500; }
+          border-top: 0.3125rem solid #67d4fb; }
           .sauna__content__sauna .sauna__gallery__overlay__title {
             font-size: 2.25rem;
             letter-spacing: 0.3125rem; }
@@ -3199,7 +3196,7 @@ table.blueTable tfoot td {
           align-items: center;
           font-size: 1.5rem;
           text-transform: uppercase;
-          background: #fea500;
+          background: #67d4fb;
           color: white; }
           @media screen and (max-width: 1380px) {
             .sauna__content__banya .banya__txt__sex {
@@ -3419,7 +3416,7 @@ table.blueTable tfoot td {
               align-items: center;
               text-align: center; }
               .sauna__content__banya .banya__txt__contacts__benefit__link:hover {
-                color: #fea500; }
+                color: #67d4fb; }
           .sauna__content__banya .banya__txt__contacts__rules {
             height: 100%;
             width: 39%;
@@ -3456,7 +3453,7 @@ table.blueTable tfoot td {
               align-items: center;
               text-align: center; }
               .sauna__content__banya .banya__txt__contacts__rules__link:hover {
-                color: #fea500; }
+                color: #67d4fb; }
       .sauna__content__banya .banya__gallery {
         height: 40%;
         width: 100%;
@@ -3486,7 +3483,7 @@ table.blueTable tfoot td {
           -o-transition: .3s;
           transition: .3s; }
           .sauna__content__banya .banya__gallery .photo-container:hover {
-            border: 0.125rem solid #fea500; }
+            border: 0.125rem solid #67d4fb; }
           .sauna__content__banya .banya__gallery .photo-container .banya__gallery__photo {
             width: 100%;
             height: 100%; }
@@ -3499,7 +3496,7 @@ table.blueTable tfoot td {
           -webkit-transition: .5s;
           -o-transition: .5s;
           transition: .5s;
-          color: #fea500;
+          color: #67d4fb;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -3509,7 +3506,7 @@ table.blueTable tfoot td {
           -webkit-box-align: center;
           -ms-flex-align: center;
           align-items: center;
-          border-top: 0.3125rem solid #fea500; }
+          border-top: 0.3125rem solid #67d4fb; }
           .sauna__content__banya .banya__gallery__overlay__title {
             font-size: 2.25rem;
             letter-spacing: 0.3125rem; }

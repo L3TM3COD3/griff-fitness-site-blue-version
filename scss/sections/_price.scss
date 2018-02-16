@@ -55,7 +55,7 @@
 
                             &__name {
                                 font-style: italic;
-                                color: $low-orange;
+                                color: $high-blue;
                             }
                         }
 
@@ -67,11 +67,11 @@
                             }
 
                             .desc-marker {
-                                color: $low-orange;
+                                color: $high-blue;
                             }
 
                             .add-link {
-                                color: $low-orange;
+                                color: $high-blue;
                                 text-decoration: underline;
                                 
                                 &:hover {
@@ -173,7 +173,7 @@
                                     
                                     &--spec {
                                         padding: 6%;
-                                        background: $low-orange;
+                                        background: $low-blue;
                                         height: 100%;
                                         width: 100%;
                                         display: flex;
@@ -186,17 +186,17 @@
 
                                         &__title {
                                             font-size: rem(24px);
-                                            color: $black;
+                                            color: white;
                                             text-transform: uppercase;
 
                                             .month-marker {
-                                                color: white;
+                                                color: $high-blue;
                                             }
                                         }
     
                                         &__price {
                                             font-size: rem(36px);
-                                            color: $black;
+                                            color: white;
                                             text-transform: uppercase;
                                         }
     
@@ -211,6 +211,7 @@
                                             justify-content: center;
                                             align-items: center;
                                             transition: .3s;
+                                            display: none;
     
                                             &:hover {
                                                 background: white;
@@ -232,7 +233,7 @@
                                         -moz-box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
                                         box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
                                         z-index: 5;
-                                        border: rem(2px) solid $low-orange;
+                                        border: rem(2px) solid $high-blue;
                                     }
 
                                     &__title {
@@ -241,13 +242,13 @@
                                         text-transform: uppercase;
 
                                         .month-marker {
-                                            color: $low-orange;
+                                            color: $high-blue;
                                         }
                                     }
 
                                     &__price {
                                         font-size: rem(25px);
-                                        color: $low-orange;
+                                        color: $high-blue;
                                         text-transform: uppercase;
                                     }
 
@@ -262,6 +263,7 @@
                                         justify-content: center;
                                         align-items: center;
                                         transition: .3s;
+                                        display: none;
 
                                         &:hover {
                                             background: $low-orange;
@@ -388,13 +390,13 @@
                                             text-transform: uppercase;
 
                                             .month-marker {
-                                                color: $black;
+                                                color: $high-blue;
                                             }
                                         }
     
                                         &__price {
                                             font-size: rem(36px);
-                                            color: white;
+                                            color: $high-blue;
                                             text-transform: uppercase;
                                         }
     
@@ -409,6 +411,7 @@
                                             justify-content: center;
                                             align-items: center;
                                             transition: .3s;
+                                            display: none;
     
                                             &:hover {
                                                 background: $black;
@@ -421,7 +424,7 @@
                                             -moz-box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
                                             box-shadow: rem(0px) rem(14px) rem(35px) rem(3px) rgba(0,0,0,0.75);
                                             z-index: 5;
-                                            border: rem(2px) solid $black;
+                                            border: rem(2px) solid white;
                                         }
                                     }
 
@@ -460,6 +463,7 @@
                                         justify-content: center;
                                         align-items: center;
                                         transition: .3s;
+                                        display: none;
 
                                         &:hover {
                                             background: $low-blue;
@@ -555,7 +559,7 @@
                                     text-transform: uppercase;
 
                                     .month-marker {
-                                        color: $low-orange;
+                                        color: $high-blue;
                                     }
                                 }
 
@@ -565,7 +569,7 @@
                                     text-transform: uppercase;
                                     
                                     .month-marker {
-                                        color: $low-orange;
+                                        color: $high-blue;
                                     }
                                 }
 
@@ -580,6 +584,7 @@
                                     justify-content: center;
                                     align-items: center;
                                     transition: .3s;
+                                    display: none;
 
                                     &:hover {
                                         background: $low-orange;

@@ -5,7 +5,7 @@
     &--price {
         height: 10%;
         width: 100%;
-        border-bottom: rem(1px) solid $low-orange;
+        border-bottom: rem(1px) solid $high-blue;
     }
 
     &__container {
@@ -16,10 +16,9 @@
     }
 
     &__main {
-        border: rem(1px) solid black;
         height: 70%;
-        background: $black;
-        color: white;
+        background: white;
+        color: $black;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -29,17 +28,16 @@
         }
 
         &--price {
-            border: rem(1px) solid black;
             height: 100%;
-            background: $black;
-            color: white;
+            background: white;
+            color: $black;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
         &__logo {
-            width: 10%;
+            width: 13%;
         }
 
         &__menu {
@@ -62,7 +60,7 @@
                 }
 
                 &__item__link {
-                    color: white;
+                    color: $black;
                     transition: .3s;
                     border-radius: rem(0px);
                     padding: rem(2px);
@@ -71,13 +69,13 @@
                     padding-right: rem(6px);
                     
                     &:hover {
-                        color: $black;
-                        background-color: white;
+                        color: white;
+                        background-color: $low-blue;
                     }
 
                     &--active {
-                        color: $black;
-                        background: white;
+                        color: white;
+                        background: $low-blue;
                         padding-left: rem(6px);
                         padding-right: rem(6px);
                     }
@@ -96,11 +94,12 @@
             letter-spacing: rem(2px);
 
             &__phone__link {
+                color: $black;
                 float: right;
                 transition: .3s;
 
                 &:hover {
-                    color: $low-orange;
+                    color: $low-blue;
                 }
             }
 
@@ -114,12 +113,12 @@
 
                 &__title {
                     font-style: normal;
-                    color: $low-orange;
+                    color: $low-blue;
                     transition: .3s;
                     cursor: pointer;
     
                     &:hover {
-                        color: white;
+                        color: $black;
                     }
                 }
 
