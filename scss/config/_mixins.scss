@@ -16,6 +16,12 @@
 	}
 }
 
+@mixin old {
+	@media screen and (max-width: $old) {
+		@content;
+	}
+}
+
 @mixin tablet {
   @media screen and (max-width: $tablet) {
     @content;

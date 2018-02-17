@@ -68,10 +68,9 @@
         padding-right: 3%;
         transition: 1s;
 
-        @include normal {
-            padding-left: 2%;
-            padding-right: 2%;
-            height: 70%;    
+        @include old {
+            width: 30%;
+            left: 3%;
         }
 
         &:hover {

@@ -36,6 +36,9 @@ html {
   @media screen and (max-width: 992px) {
     html {
       font-size: 14px; } }
+  @media screen and (max-width: 1030px) {
+    html {
+      font-size: 12px; } }
   @media screen and (max-width: 768px) {
     html {
       font-size: 10px; } }
@@ -162,6 +165,9 @@ a {
       align-items: center; }
     .header__main__logo {
       width: 13%; }
+      @media screen and (max-width: 1030px) {
+        .header__main__logo {
+          width: 14%; } }
     .header__main__menu {
       width: 50%; }
       .header__main__menu__list {
@@ -176,6 +182,9 @@ a {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center; }
+        @media screen and (max-width: 1030px) {
+          .header__main__menu__list {
+            width: 105%; } }
         .header__main__menu__list__item {
           -webkit-transition: .3s;
           -o-transition: .3s;
@@ -218,6 +227,9 @@ a {
       -ms-flex-pack: justify;
       justify-content: space-between;
       letter-spacing: 0.125rem; }
+      @media screen and (max-width: 1030px) {
+        .header__main__contacts {
+          font-size: 15px; } }
       .header__main__contacts__phone__link {
         color: #333333;
         float: right;
@@ -322,6 +334,9 @@ a {
       min-width: 40%;
       height: 100%;
       font-family: pobedabold; }
+      @media screen and (max-width: 1030px) {
+        .header__sub__list {
+          width: 50%; } }
       .header__sub__list::before {
         content: '';
         background-image: url("../../img/icons/triangle.png");
@@ -403,6 +418,9 @@ a {
         @media screen and (max-width: 1380px) {
           .hero__content__txt__title {
             font-size: 64px; } }
+        @media screen and (max-width: 1030px) {
+          .hero__content__txt__title {
+            font-size: 54px; } }
         .hero__content__txt__title .marker {
           background: white;
           padding-left: 2%;
@@ -435,6 +453,9 @@ a {
           @media screen and (max-width: 1380px) {
             .hero__content__txt__adv__list {
               font-size: 21px; } }
+          @media screen and (max-width: 1030px) {
+            .hero__content__txt__adv__list {
+              font-size: 18px; } }
       .hero__content__txt__usefull-links__list {
         min-width: 33%;
         display: -webkit-box;
@@ -480,6 +501,7 @@ a {
           color: #333333;
           margin-right: 1%;
           margin-top: 1%;
+          text-align: center;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -774,11 +796,10 @@ a {
     -webkit-transition: 1s;
     -o-transition: 1s;
     transition: 1s; }
-    @media screen and (max-width: 1380px) {
+    @media screen and (max-width: 1030px) {
       .slider__ctrl {
-        padding-left: 2%;
-        padding-right: 2%;
-        height: 70%; } }
+        width: 30%;
+        left: 3%; } }
     .slider__ctrl:hover {
       -webkit-box-shadow: 0.9375rem 0.5625rem 2.5rem -0.375rem rgba(0, 0, 0, 0.39);
       -moz-box-shadow: 0.9375rem 0.5625rem 2.5rem -0.375rem rgba(0, 0, 0, 0.39);
@@ -864,6 +885,11 @@ a {
         font-size: 64px;
         top: 1%;
         left: 5%; } }
+    @media screen and (max-width: 1030px) {
+      .slider__slides__adv__title {
+        font-size: 56px;
+        letter-spacing: 40px;
+        left: 8%; } }
   .slider__slides__adv__list {
     height: 80%;
     width: 65%;
@@ -883,6 +909,10 @@ a {
       .slider__slides__adv__list {
         height: 75%;
         margin-top: 8%; } }
+    @media screen and (max-width: 1030px) {
+      .slider__slides__adv__list {
+        margin-top: 10%;
+        width: 75%; } }
     .slider__slides__adv__list__item {
       height: 20%;
       width: 100%;
@@ -938,6 +968,9 @@ a {
         @media screen and (max-width: 1380px) {
           .slider__slides__adv__list__item__txt {
             width: 85%; } }
+        @media screen and (max-width: 1030px) {
+          .slider__slides__adv__list__item__txt {
+            width: 90%; } }
         .slider__slides__adv__list__item__txt__title {
           text-transform: uppercase;
           text-decoration: underline;
@@ -947,6 +980,9 @@ a {
           @media screen and (max-width: 1380px) {
             .slider__slides__adv__list__item__txt__title {
               font-size: 21px; } }
+          @media screen and (max-width: 1030px) {
+            .slider__slides__adv__list__item__txt__title {
+              font-size: 18px; } }
         .slider__slides__adv__list__item__txt__desc {
           height: 72%;
           font-family: cervo;
@@ -965,6 +1001,9 @@ a {
           @media screen and (max-width: 1380px) {
             .slider__slides__adv__list__item__txt__desc {
               font-size: 18px; } }
+          @media screen and (max-width: 1030px) {
+            .slider__slides__adv__list__item__txt__desc {
+              font-size: 16px; } }
           .slider__slides__adv__list__item__txt__desc__more {
             -webkit-transition: .3s;
             -o-transition: .3s;
@@ -998,6 +1037,11 @@ a {
         top: 1%;
         left: 3%;
         letter-spacing: 60px; } }
+    @media screen and (max-width: 1030px) {
+      .slider__slides__equip__title {
+        font-size: 56px;
+        letter-spacing: 40px;
+        left: 4%; } }
   .slider__slides__equip__list {
     height: 80%;
     width: 65%;
@@ -1014,7 +1058,11 @@ a {
     margin-right: 8%; }
     @media screen and (max-width: 1380px) {
       .slider__slides__equip__list {
-        height: 70%; } }
+        height: 72%; } }
+    @media screen and (max-width: 1030px) {
+      .slider__slides__equip__list {
+        height: 75%;
+        width: 75%; } }
     .slider__slides__equip__list__item {
       height: 20%;
       width: 100%;
@@ -1058,6 +1106,9 @@ a {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column; }
+        @media screen and (max-width: 1030px) {
+          .slider__slides__equip__list__item__txt {
+            width: 85%; } }
         .slider__slides__equip__list__item__txt__title {
           text-transform: uppercase;
           text-decoration: underline;
@@ -1068,6 +1119,9 @@ a {
             .slider__slides__equip__list__item__txt__title {
               font-size: 21px;
               margin-bottom: 2%; } }
+          @media screen and (max-width: 1030px) {
+            .slider__slides__equip__list__item__txt__title {
+              font-size: 18px; } }
         .slider__slides__equip__list__item__txt__desc {
           height: 72%;
           font-family: cervo;
@@ -1086,6 +1140,9 @@ a {
           @media screen and (max-width: 1380px) {
             .slider__slides__equip__list__item__txt__desc {
               font-size: 18px; } }
+          @media screen and (max-width: 1030px) {
+            .slider__slides__equip__list__item__txt__desc {
+              font-size: 16px; } }
           .slider__slides__equip__list__item__txt__desc__more {
             -webkit-transition: .3s;
             -o-transition: .3s;
@@ -1585,6 +1642,9 @@ a {
               justify-content: space-between;
               color: #333333;
               z-index: 6; }
+              @media screen and (max-width: 1030px) {
+                .ticket__container .ticket__btns__col--first .ticket__athlete__btn__overlay {
+                  background-position: 60% 0%; } }
               .ticket__container .ticket__btns__col--first .ticket__athlete__btn__overlay__title {
                 text-transform: uppercase;
                 color: white;
@@ -1593,6 +1653,9 @@ a {
                 @media screen and (max-width: 1380px) {
                   .ticket__container .ticket__btns__col--first .ticket__athlete__btn__overlay__title {
                     font-size: 48px; } }
+                @media screen and (max-width: 1030px) {
+                  .ticket__container .ticket__btns__col--first .ticket__athlete__btn__overlay__title {
+                    font-size: 38px; } }
                 .ticket__container .ticket__btns__col--first .ticket__athlete__btn__overlay__title .athlete-marker {
                   background: #333333;
                   padding-left: 2%;
@@ -1601,9 +1664,6 @@ a {
                 text-transform: uppercase;
                 font-size: 2.25rem;
                 text-decoration: underline; }
-                @media screen and (max-width: 1380px) {
-                  .ticket__container .ticket__btns__col--first .ticket__athlete__btn__overlay__view {
-                    font-size: 32px; } }
             .ticket__container .ticket__btns__col--first .ticket__athlete__btn__content {
               border: 0.125rem solid white;
               width: 100%;
@@ -1808,6 +1868,9 @@ a {
                 color: white;
                 font-size: 4rem;
                 height: 50%; }
+                @media screen and (max-width: 1030px) {
+                  .ticket__container .ticket__btns__col--second .ticket__athlete__btn__overlay__title {
+                    font-size: 38px; } }
                 .ticket__container .ticket__btns__col--second .ticket__athlete__btn__overlay__title .athlete-marker {
                   background: #333333;
                   padding-left: 2%;
@@ -2013,6 +2076,9 @@ a {
                 color: #333333;
                 z-index: 6;
                 text-align: left; }
+                @media screen and (max-width: 1030px) {
+                  .ticket__container .ticket__btns__col__row__col-list__col__overlay {
+                    background-position: 50% 0%; } }
                 .ticket__container .ticket__btns__col__row__col-list__col__overlay__title {
                   text-transform: uppercase;
                   color: white;
@@ -2458,7 +2524,7 @@ a {
     text-transform: uppercase;
     margin-top: 3%;
     font-size: 21px;
-    background: #0060ff;
+    background: #67d4fb;
     height: 100%;
     padding: 1%;
     width: 25%;
@@ -2473,7 +2539,8 @@ a {
     align-items: center;
     -webkit-transition: .3s;
     -o-transition: .3s;
-    transition: .3s; }
+    transition: .3s;
+    text-align: center; }
     .modal__content__btn:hover {
       color: white;
       background: #333333; }
@@ -2550,6 +2617,9 @@ a {
         @media screen and (max-width: 1380px) {
           .list__content__txt__title {
             font-size: 60px; } }
+        @media screen and (max-width: 1030px) {
+          .list__content__txt__title {
+            font-size: 44px; } }
         .list__content__txt__title .athlete-marker {
           background: white;
           padding-left: 2%;
@@ -2594,6 +2664,9 @@ a {
           @media screen and (max-width: 1380px) {
             .list__content__txt__btns__link-one {
               width: 55%; } }
+          @media screen and (max-width: 1030px) {
+            .list__content__txt__btns__link-one {
+              width: 60%; } }
           .list__content__txt__btns__link-one:hover {
             -webkit-transform: translateY(0.625rem);
             -ms-transform: translateY(0.625rem);
@@ -2601,7 +2674,7 @@ a {
             -webkit-box-shadow: 0rem 0rem 0rem 0rem transparent;
             -moz-box-shadow: 0rem 0rem 0rem 0rem transparent;
             box-shadow: 0rem 0rem 0rem 0rem transparent;
-            background: #0060ff; }
+            background: #67d4fb; }
         .list__content__txt__btns__link-two {
           background: white;
           height: 100%;
@@ -2624,6 +2697,9 @@ a {
           -webkit-box-shadow: 0rem 0.625rem 2.625rem 0.1875rem rgba(0, 0, 0, 0.77);
           -moz-box-shadow: 0rem 0.625rem 2.625rem 0.1875rem rgba(0, 0, 0, 0.77);
           box-shadow: 0rem 0.625rem 2.625rem 0.1875rem rgba(0, 0, 0, 0.77); }
+          @media screen and (max-width: 1030px) {
+            .list__content__txt__btns__link-two {
+              width: 35%; } }
           .list__content__txt__btns__link-two:hover {
             -webkit-transform: translateY(0.625rem);
             -ms-transform: translateY(0.625rem);
@@ -2631,7 +2707,7 @@ a {
             -webkit-box-shadow: 0rem 0rem 0rem 0rem transparent;
             -moz-box-shadow: 0rem 0rem 0rem 0rem transparent;
             box-shadow: 0rem 0rem 0rem 0rem transparent;
-            background: #0060ff; }
+            background: #67d4fb; }
     .list__content__ways {
       width: 50%;
       height: 100%;
@@ -3002,6 +3078,9 @@ table.blueTable tfoot td {
         @media screen and (max-width: 1380px) {
           .sauna__content__txt__title {
             font-size: 64px; } }
+        @media screen and (max-width: 1030px) {
+          .sauna__content__txt__title {
+            font-size: 52px; } }
         .sauna__content__txt__title .athlete-marker {
           background: white;
           padding-left: 2%;
@@ -3176,11 +3255,17 @@ table.blueTable tfoot td {
             @media screen and (max-width: 1380px) {
               .sauna__content__banya .banya__txt__title__name {
                 font-size: 32px; } }
+            @media screen and (max-width: 1030px) {
+              .sauna__content__banya .banya__txt__title__name {
+                font-size: 28px; } }
           .sauna__content__banya .banya__txt__title__location {
-            font-size: 2.625rem; }
+            font-size: 2.25rem; }
             @media screen and (max-width: 1380px) {
               .sauna__content__banya .banya__txt__title__location {
                 font-size: 28px; } }
+            @media screen and (max-width: 1030px) {
+              .sauna__content__banya .banya__txt__title__location {
+                font-size: 24px; } }
         .sauna__content__banya .banya__txt__sex {
           width: 100%;
           height: 10%;
@@ -3201,6 +3286,9 @@ table.blueTable tfoot td {
           @media screen and (max-width: 1380px) {
             .sauna__content__banya .banya__txt__sex {
               font-size: 21px; } }
+          @media screen and (max-width: 1030px) {
+            .sauna__content__banya .banya__txt__sex {
+              font-size: 17px; } }
           .sauna__content__banya .banya__txt__sex__man {
             width: 50%;
             height: 100%;
@@ -3259,11 +3347,17 @@ table.blueTable tfoot td {
                 @media screen and (max-width: 1380px) {
                   .sauna__content__banya .banya__txt__shedule__weekdays__txt__title {
                     font-size: 24px; } }
+                @media screen and (max-width: 1030px) {
+                  .sauna__content__banya .banya__txt__shedule__weekdays__txt__title {
+                    font-size: 21px; } }
               .sauna__content__banya .banya__txt__shedule__weekdays__txt__content {
                 font-size: 1.5rem; }
                 @media screen and (max-width: 1380px) {
                   .sauna__content__banya .banya__txt__shedule__weekdays__txt__content {
                     font-size: 21px; } }
+                @media screen and (max-width: 1030px) {
+                  .sauna__content__banya .banya__txt__shedule__weekdays__txt__content {
+                    font-size: 18px; } }
             .sauna__content__banya .banya__txt__shedule__weekdays__price {
               width: 50%;
               height: 100%;
@@ -3282,6 +3376,9 @@ table.blueTable tfoot td {
               @media screen and (max-width: 1380px) {
                 .sauna__content__banya .banya__txt__shedule__weekdays__price {
                   font-size: 19px; } }
+              @media screen and (max-width: 1030px) {
+                .sauna__content__banya .banya__txt__shedule__weekdays__price {
+                  font-size: 16px; } }
           .sauna__content__banya .banya__txt__shedule__weekends {
             width: 100%;
             height: 40%;
@@ -3309,11 +3406,17 @@ table.blueTable tfoot td {
                 @media screen and (max-width: 1380px) {
                   .sauna__content__banya .banya__txt__shedule__weekends__txt__title {
                     font-size: 24px; } }
+                @media screen and (max-width: 1030px) {
+                  .sauna__content__banya .banya__txt__shedule__weekends__txt__title {
+                    font-size: 21px; } }
               .sauna__content__banya .banya__txt__shedule__weekends__txt__content {
                 font-size: 1.5rem; }
                 @media screen and (max-width: 1380px) {
                   .sauna__content__banya .banya__txt__shedule__weekends__txt__content {
                     font-size: 21px; } }
+                @media screen and (max-width: 1030px) {
+                  .sauna__content__banya .banya__txt__shedule__weekends__txt__content {
+                    font-size: 18px; } }
             .sauna__content__banya .banya__txt__shedule__weekends__price {
               width: 50%;
               height: 100%;
@@ -3332,6 +3435,9 @@ table.blueTable tfoot td {
               @media screen and (max-width: 1380px) {
                 .sauna__content__banya .banya__txt__shedule__weekends__price {
                   font-size: 19px; } }
+              @media screen and (max-width: 1030px) {
+                .sauna__content__banya .banya__txt__shedule__weekends__price {
+                  font-size: 16px; } }
         .sauna__content__banya .banya__txt__contacts {
           color: white;
           background: #333333;
@@ -3354,6 +3460,9 @@ table.blueTable tfoot td {
             align-items: center;
             font-size: 1.125rem;
             letter-spacing: 0.125rem; }
+            @media screen and (max-width: 1030px) {
+              .sauna__content__banya .banya__txt__contacts__tel {
+                font-size: 12px; } }
           .sauna__content__banya .banya__txt__contacts__btns {
             display: -webkit-box;
             display: -ms-flexbox;

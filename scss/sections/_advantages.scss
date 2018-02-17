@@ -16,6 +16,12 @@
             top: 1%;
             left: 5%;               
         }
+
+        @include old {
+            font-size: 56px;
+            letter-spacing: 40px;
+            left: 8%; 
+        }
     }
 
     &__list {
@@ -30,6 +36,12 @@
         @include normal {
             height: 75%;
             margin-top: 8%;              
+        }
+
+        @include old {
+            margin-top: 10%;   
+            width: 75%; 
+             
         }
 
         &__item {
@@ -88,6 +100,10 @@
                     width: 85%; 
                  }
 
+                @include old {
+                    width: 90%;
+                }
+
                 &__title {
                     text-transform: uppercase;
                     text-decoration: underline;
@@ -97,6 +113,10 @@
 
                     @include normal {
                         font-size: 21px;
+                    }
+
+                    @include old {
+                        font-size: 18px;   
                     }
                 }
 
@@ -111,6 +131,10 @@
 
                     @include normal {
                         font-size: 18px;    
+                    }
+
+                    @include old {
+                        font-size: 16px;   
                     }
 
                     &__more {

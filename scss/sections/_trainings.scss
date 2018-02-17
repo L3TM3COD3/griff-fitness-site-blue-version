@@ -29,7 +29,7 @@
             @include normal {
                 height: 83%;   
             }
-            
+
             &__title {
                 color: $black;
                 text-transform: uppercase;
@@ -38,6 +38,10 @@
                 
                 @include normal {
                     font-size: 60px;   
+                }
+
+                @include old {
+                    font-size: 44px;   
                 }
 
                 .athlete-marker {
@@ -78,12 +82,16 @@
                         width: 55%;        
                     }
 
+                    @include old {
+                        width: 60%;   
+                    }
+
                     &:hover {
                         transform: translateY(rem(10px));
                         -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
                         -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
                         box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
-                        background: $low-orange;
+                        background: $high-blue;
                     }
                 }
 
@@ -102,12 +110,16 @@
                     -moz-box-shadow: rem(0px) rem(10px) rem(42px) rem(3px) rgba(0,0,0,0.77);
                     box-shadow: rem(0px) rem(10px) rem(42px) rem(3px) rgba(0,0,0,0.77);
 
+                    @include old {
+                        width: 35%;   
+                    }
+
                     &:hover {
                         transform: translateY(rem(10px));
                         -webkit-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
                         -moz-box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
                         box-shadow: rem(0px) rem(0px) rem(0px) rem(0px) rgba(0,0,0,0);
-                        background: $low-orange;
+                        background: $high-blue;
                     }
                 }
             }

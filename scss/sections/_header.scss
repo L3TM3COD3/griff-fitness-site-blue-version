@@ -38,6 +38,10 @@
 
         &__logo {
             width: 13%;
+            
+            @include old {
+                width: 14%;   
+            }
         }
 
         &__menu {
@@ -50,6 +54,10 @@
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
+
+                @include old {
+                    width: 105%;
+                }
 
                 &__item {
                     transition: .3s;
@@ -92,6 +100,10 @@
             flex-direction: column;
             justify-content: space-between;
             letter-spacing: rem(2px);
+
+            @include old {
+                font-size: 15px;   
+            }
 
             &__phone__link {
                 color: $black;
@@ -190,6 +202,10 @@
             min-width: 40%;
             height: 100%;
             font-family: pobedabold;
+
+            @include old {
+                width: 50%;   
+            }
 
             &::before {
                 content: '';

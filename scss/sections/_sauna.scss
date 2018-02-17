@@ -53,6 +53,10 @@
                     font-size: 64px;
                 }
 
+                @include old {
+                    font-size: 52px;   
+                }
+
                 .athlete-marker {
                     background: white;
                     padding-left: 2%;
@@ -204,13 +208,21 @@
                         @include normal {
                             font-size: 32px;
                         }
+
+                        @include old {
+                            font-size: 28px;   
+                        }
                     }
 
                     &__location {
-                        font-size: rem(42px);
+                        font-size: rem(36px);
 
                         @include normal {
                             font-size: 28px;
+                        }
+
+                        @include old {
+                            font-size: 24px;   
                         }
                     }
                 }
@@ -229,6 +241,10 @@
 
                     @include normal {
                         font-size: 21px;
+                    }
+
+                    @include old {
+                        font-size: 17px;   
                     }
 
                     &__man {
@@ -277,6 +293,10 @@
                                 @include normal {
                                     font-size: 24px;
                                 }
+
+                                @include old {
+                                    font-size: 21px;   
+                                }
                             }
 
                             &__content {
@@ -284,6 +304,10 @@
 
                                 @include normal {
                                     font-size: 21px;
+                                }
+
+                                @include old {
+                                    font-size: 18px;   
                                 }
                             }
                         }
@@ -299,6 +323,10 @@
 
                             @include normal {
                                 font-size: 19px;
+                            }
+
+                            @include old {
+                                font-size: 16px;   
                             }
                         }
                     }
@@ -324,6 +352,10 @@
                                 @include normal {
                                     font-size: 24px;
                                 }
+
+                                @include old {
+                                    font-size: 21px;   
+                                }
                             }
 
                             &__content {
@@ -331,6 +363,10 @@
 
                                 @include normal {
                                     font-size: 21px;
+                                }
+
+                                @include old {
+                                    font-size: 18px;   
                                 }
                             }
                         }
@@ -346,6 +382,10 @@
 
                             @include normal {
                                 font-size: 19px;
+                            }
+
+                            @include old {
+                                font-size: 16px;   
                             }
                         }
                     }
@@ -368,6 +408,11 @@
                         align-items: center;
                         font-size: rem(18px);
                         letter-spacing: rem(2px);
+
+                        @include old {
+                            font-size: 12px;   
+                        }
+    
                     }
 
                     &__btns {

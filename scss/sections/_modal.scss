@@ -292,7 +292,7 @@
         text-transform: uppercase;
         margin-top: 3%;
         font-size: 21px;
-        background: $low-orange;
+        background: $high-blue;
         height: 100%;
         padding: 1%;
         width: 25%;
@@ -300,6 +300,7 @@
         justify-content: center;
         align-items: center;
         transition: .3s;
+        text-align: center;
 
         &:hover {
             color: white;

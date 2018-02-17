@@ -9,6 +9,10 @@ html {
 		font-size: 14px;
 	}
 
+	@include old {
+		font-size: 12px;
+	}
+
 	@include tablet {
 		font-size: 10px;
 	}
